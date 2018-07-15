@@ -1,0 +1,1145 @@
+body * {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body,ul,li {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	font-size: 12px;
+	-webkit-user-select: none;
+	-webkit-text-size-adjust: none; /*
+	background-color: #333639;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Calibri, "Trebuchet MS", "Lucida Sans Unicode", Arial;*/
+	font-family: Calibri, san-serif;
+	width: 400px;
+	height: 100%;
+	margin: 0 auto;
+	color: #fff;
+}
+
+select {
+	border: none;
+	background: #030202;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/* facebook stilovi pocetok */
+#fb-root {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+/*
+.fb_reset > div {
+	left: 10px;
+	right: 10px;
+	z-index: 1000;
+}
+.FB_UI_Dialog, .fb_reset > iframe, .fb_dialog_content iframe {
+	width:400px;
+}
+*/
+
+/* facebook stilovi kraj */
+.custom-combobox {
+	position: relative;
+	display: block;
+	margin-right: 40px;
+}
+
+.custom-combobox-toggle {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-left: -1px;
+	padding: 0;
+	/* support: IE7 */
+	*height: 1.7em;
+	*top: 0.1em;
+}
+
+.custom-combobox-input {
+	margin: 0;
+	padding: 0.2em;
+}
+
+#contentWrapper {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	width: 400px;
+}
+
+#podvizno {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease; /*
+	position: absolute;
+	top: 44px;
+	bottom: 130px;
+	left: 0px;
+	margin: 0 auto 45px auto;
+	width: 100%;*/
+	width: 400px;
+	min-height: 100%;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+#pageTitle {
+	position: absolute;
+	top: 13px;
+	left: 115px;
+	z-index: 1;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+div {
+	-webkit-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#header {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 48px;
+	line-height: 45px;
+	padding: 0;
+	color: #eee;
+	font-size: 20px;
+	background: #4c4c4c;
+	border-bottom: solid 4px #feda06;
+}
+
+#header img {
+	margin: 10px 0 0 10px;
+}
+
+#header span {
+	margin-left: 5px;
+	color: #999999;
+}
+
+#container {
+	font-size: 1.2em;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: auto;
+	text-align: center;
+	padding-bottom: 45px;
+}
+
+.maxTipovi {
+	position: absolute;
+	background: #6b6965;
+	height: 41px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	top: 0px;
+	right: 0px;
+	padding: 10px 15px;
+	z-index: 1;
+	cursor: pointer;
+}
+
+#footer {
+	position: fixed;
+	z-index: 2;
+	bottom: 0; /*
+	left: 0;
+	width: 100%;*/
+	width: 400px;
+	margin: 0 auto;
+	height: 45px;
+	background: #1f1f1f;
+	padding: 0;
+	color: #fff;
+	height: 45px;
+}
+
+.row {
+	height: 45px;
+	width: 100%;
+}
+
+.col {
+	float: left;
+	width: 24%;
+	height: 30px;
+	text-align: center;
+	border-right-style: solid;
+	border-right-width: 2px;
+	border-right-color: #2e2e2e;
+	text-decoration: none;
+	padding-top: 15px;
+}
+
+.col.last {
+	border-right-width: 0px;
+	border-right-style: none;
+}
+
+.footer_images {
+	line-height: 0;
+	margin: -5px;
+	padding: 0;
+	display: inline;
+	margin-right: 10px;
+}
+
+.col span {
+	color: #ffffff;
+	padding-top: 3px;
+}
+
+#mybetstable {
+	position: relative;
+	border-collapse: collapse;
+	color: #fff;
+	width: 100%; /*
+	background-color: #2b2b2c;*/
+}
+
+#mybetstable th,#mybetstable td {
+	border-bottom: solid thin #373737;
+	text-align: center;
+	padding: 3px;
+}
+
+#mybetstable thead {
+	color: #676767;
+	background-color: #171718;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+#coldate {
+	background-color: #333639;
+}
+
+#coldate div {
+	text-align: left;
+	font-weight: bold;
+	height: 10px;
+	padding-top: 5px;
+	padding-bottom: -5px;
+}
+
+#mybetstable {
+	font-size: 16px;
+}
+
+#mybetstable td {
+	white-space: nowrap;
+}
+
+#mybetstable th {
+	font-weight: normal;
+}
+
+#mybetstable td {
+	border-style: none solid #fff;
+	vertical-align: top;
+}
+
+#mybetstable th {
+	padding: 0.2em;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#mybetstable #col1 {
+	text-align: left;
+	padding-left: 2%;
+	min-width: 85px;
+}
+
+#mybetstable td#col1 {
+	cursor: pointer;
+}
+
+#mybetstable td#col1:HOVER {
+	font-weight: bold;
+}
+
+#mybetstable #col2 {
+	width: 15%;
+}
+
+#mybetstable #col3 {
+	width: 15%;
+}
+
+#mybetstable #col4 {
+	width: 15%;
+}
+
+#mybetstable td#col4 {
+	background-color: #fff;
+	color: #000;
+}
+
+#mybetstable #col5 {
+	width: 15%;
+}
+
+#mybetstable #col6 {
+	width: 17%;
+	padding-right: 2%;
+}
+
+#mybetstable #col1 a {
+	color: #fff;
+}
+
+#mybetstable #col1 .won {
+	color: #0fb50f;
+}
+
+#mybetstable #col1 .missed {
+	color: #808080;
+}
+
+#mybetstable .won #col4 {
+	background-color: #0f0;
+}
+
+#mybetstable .missed #col4 {
+	background-color: #aaa;
+}
+
+#mybetstable .won {
+	color: #0fb50f;
+}
+
+#mybetstable .missed {
+	color: #808080;
+}
+
+#filter {
+	position: relative;
+	height: 40px;
+	background: #030202;
+	z-index: 3;
+}
+
+#filter  select {
+	margin-left: 10px;
+	margin-top: 10px;
+	border: none;
+	background: #030202;
+	color: #fff;
+}
+
+}
+.slicknav_menu {
+	display: none;
+}
+
+.js #menu {
+	display: none;
+}
+
+.js .slicknav_menu {
+	display: block;
+}
+
+.listmatch {
+	position: relative;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	width: 90%;
+	cursor: pointer;
+	padding: 11px;
+	font-size: 20px;
+	font-weight: bold;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8f8f8),
+		to(#dddddd));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #f8f8f8, #dddddd);
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #f8f8f8, #dddddd);
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #f8f8f8, #dddddd);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #f8f8f8, #dddddd);
+	-moz-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.listmatch:hover {
+	background: #ffd709;
+	-webkit-box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.5);
+}
+
+.numbermatch {
+	float: right;
+}
+
+#leaderboard {
+	/*   border: solid thin fff;  */
+	border-collapse: collapse;
+	color: #fff;
+	width: 400px; /*
+	background-color: #2b2b2c;*/
+}
+
+#leaderboard th,#leaderboard td {
+	border-bottom: solid thin #373737;
+	text-align: left;
+	height: 50px;
+}
+
+#leaderboard td {
+	border-style: none solid fff;
+	vertical-align: top;
+	white-space: nowrap;
+}
+
+#leaderboard th {
+	padding: 0.2em;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: normal;
+}
+
+#leaderboard #col1 {
+	width: 40px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#leaderboard #col2 {
+	padding-left: 10px;
+	vertical-align: middle;
+	font-size: 18px;
+}
+
+#leaderboard #col2 > a
+{
+	color: #fff;
+	max-width: 200px;
+	text-overflow: ellipsis;
+	display: block;
+    overflow: hidden;
+}
+
+
+#leaderboard #col3 {
+	padding-right: 5px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+#leaderboard #col4 {
+	width: 70px;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+#leaderboard #col4 img {
+	height: 22px;
+	width: 69px;
+}
+
+/*BALANS*/
+#balans_crno {
+	color: #fff;
+	padding: 9px 11px;
+	position: absolute;
+	background-color: #000; /*
+	opacity: 0.7;
+	filter: alpha(opacity = 70);*/
+	font-size: 19px;
+	font-weight: bold;
+}
+
+#balans_image {
+	position: relative;
+	float: right;
+	margin: 0px;
+	margin-right: 20px;
+	z-index: 3;
+	height: 70px;
+	width: 70px;
+	margin-top: -70px;
+}
+
+#balans table { /*
+	height: 100px;
+	width: 100%;*/
+	margin-left: -5px;
+}
+
+#balans table #balans_one {
+	padding-left: 15px;
+	height: 100px;
+	width: 33%;
+	vertical-align: top;
+}
+
+#balans table #balans_two {
+	text-align: center;
+	height: 100px;
+	width: 33%;
+	vertical-align: top;
+}
+
+#balans table #balans_three {
+	padding-right: 10px;
+	text-align: right;
+	height: 100px;
+	width: 33%;
+	vertical-align: top;
+}
+
+.balans_span {
+	color: #abdaff;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.balans_span2 {
+	color: #feda06;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.balans_span3 {
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#fav_sport {
+	height: 30px;
+	width: 30px;
+	line-height: 0;
+	margin: 0;
+}
+
+#balans_coins {
+	height: 20px;
+	width: 20px;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+#balans_footer {
+	bottom: 0;
+	z-index: 2;
+	background: #000;
+	width: 400px;
+	position: fixed;
+}
+
+#balans_footer span {
+	padding-top: 10px;
+	text-align: center;
+	display: block;
+	font-size: 14px;
+	color: #FFF;
+}
+
+#balans_footer img {
+	height: 64px;
+	width: 289px;
+	line-height: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+}
+
+#login_header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	line-height: 45px;
+	background-color: #d51875;
+	padding: 0;
+	color: #eee;
+	font-size: 20px;
+	background: #1f1f1f;
+	border-bottom: solid 4px #feda06;
+	z-index: 3;
+}
+
+#login_header img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width: 130px;
+}
+
+#login_header span {
+	margin-left: 5px;
+	color: #999999;
+}
+
+#tablelist {
+	border-collapse: collapse;
+	color: #fff;
+	width: 100%;
+	font-size: 17px; /*
+	background-color: #2b2b2c;*/
+}
+
+#tablelist th,#tablelist td {
+	border-bottom: solid thin #373737;
+	text-align: left;
+	height: 4em;
+}
+
+#tablelist #col1 {
+	width: 65px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#tablelist #col1 img {
+	height: 55px;
+}
+
+#tablelist #col2 {
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+#tablelist #col3 {
+	width: 40px;
+	vertical-align: middle;
+}
+
+#tablelist #col3 img {
+	height: 30px;
+	width: 30px;
+}
+
+#tablelist td {
+	white-space: nowrap;
+}
+
+#tablelist th {
+	font-weight: normal;
+}
+
+#tablelist td {
+	border-style: none solid #fff;
+	vertical-align: top;
+}
+
+#tablelist th {
+	padding: 0.2em;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#tablelist #coldate {
+	text-align: left;
+	background-color: #333639;
+	padding-left: 2%;
+	font-weight: bold;
+	height: 30px;
+	vertical-align: middle;
+	padding-top: -10px;
+}
+
+#tablelist .addMore {
+	display: block;
+	float: right;
+	color: #fff;
+	background: gray;
+	border: none;
+	margin-right: 25px;
+	margin-top: -5px;
+	cursor: pointer;
+}
+
+#tablelist .addMore:HOVER {
+	background: #434343;
+}
+
+.listsports {
+	margin-top: 15px;
+	margin-left: 20px;
+	margin-right: 10px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.star {
+	position: absolute;
+	height: 20px;
+	background-image: url('../images/bottomFavorite.png');
+	top: 5px;
+	right: 5px;
+	bottom: 0px;
+	width: 20px;
+	cursor: pointer;
+}
+
+.favstar {
+	background-image: url('../images/bottomFavoriteSelected.png');
+}
+
+#one,#two,#three {
+	width: 26%;
+	height: 95px;
+	cursor: pointer;
+	padding: 5px;
+	font-size: 14px;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8f8f8),
+		to(#dddddd));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #f8f8f8, #dddddd);
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #f8f8f8, #dddddd);
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #f8f8f8, #dddddd);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #f8f8f8, #dddddd);
+	-moz-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none;
+	padding-top: 100px;
+	color: #000;
+}
+
+#one:active,#two:active,#three:active {
+	background: #ffd709;
+	-webkit-box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.5);
+}
+
+#one,#two,#three {
+	float: left;
+	position: relative;
+	text-align: center;
+	margin-top: 0px;
+	padding: 0;
+}
+
+#two {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.sporth3 {
+	text-size: 5px;
+}
+
+.clearing {
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	font-size: 1px;
+	display: block;
+}
+
+.matchDiv {
+	position: relative;
+	vertical-align: top;
+	overflow: hidden;
+	width: 100%;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	color: black;
+	/*background: url(../images/tabela_pozadina.png) no-repeat center center;*/
+}
+
+.moreBtn {
+	margin-top: 5px;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.moreBtn.selected {
+	background-color: #FADB07;
+	border: #FFF500 solid 1px;
+	font-weight: bold;
+}
+
+#pocetok {
+	padding-top: 5px;
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	width: 100%;
+	z-index: 2;
+}
+
+#pocetok p {
+	width: 140px;
+	margin: 0px auto;
+	background-color: #000;
+	color: #fff;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+.tipperInfo {
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+}
+
+.match {
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: top;
+	width: 95%;
+	height: 46px;
+	border: 1px #000 solid; /*
+	overflow: hidden;*/
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff),
+		to(#ededed));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #ffffff, #ededed);
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #ffffff, #ededed);
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #ffffff, #ededed);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #ffffff, #ededed);
+}
+
+.home {
+	float: left;
+	position: relative;
+	text-align: left;
+	width: 40%;
+	height: 100%;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.draw {
+	float: left;
+	position: relative;
+	text-align: center;
+	width: 20%;
+	height: 100%;
+	cursor: pointer;
+	padding: 5px;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8f8f8),
+		to(#dddddd));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #f8f8f8, #dddddd);
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #f8f8f8, #dddddd);
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #f8f8f8, #dddddd);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #f8f8f8, #dddddd);
+}
+
+.drawHolder {
+	float: left;
+	position: relative;
+	text-align: center;
+	width: 20%;
+	height: 100%;
+}
+
+.away {
+	float: left;
+	position: relative;
+	text-align: right;
+	width: 40%;
+	height: 100%;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.home.tipperSelected,.draw.tipperSelected,.away.tipperSelected {
+	/*background: url(../images/table_left_selected.png) no-repeat;*/
+	background: none;
+	background-color: #FFF3B4;
+	-webkit-box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.5);
+}
+
+.home.selected,.draw.selected,.away.selected {
+	/*background: url(../images/table_left_selected.png) no-repeat;*/
+	background: none;
+	background-color: #FFD706;
+	-webkit-box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.5);
+}
+
+.tim {
+	position: absolute;
+	display: block;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.home .koeficient {
+	vertical-align: top;
+	float: right;
+}
+
+.draw .koeficient {
+	vertical-align: top;
+	text-align: center;
+}
+
+.away .koeficient {
+	vertical-align: top;
+	float: left;
+}
+
+#placebet {
+	position: fixed;
+	bottom: 0;
+	width: 400px;
+	height: 120px;
+	background: #000;
+	text-align: center;
+	padding-top: 15px;
+	margin-bottom: auto;
+	border-top: solid 4px #feda06;
+	color: white;
+	z-index: 10;
+}
+
+#placebet img {
+	cursor: pointer;
+	opacity: 0.8;
+	filter: alpha(opacity =           80);
+}
+
+#placebet img:HOVER {
+	cursor: pointer;
+	opacity: 1;
+	filter: alpha(opacity =           100);
+}
+
+.row {
+	height: 45px;
+	overflow: hidden;
+	width: 100%;
+	margin-top: 10;
+}
+
+.col {
+	float: left;
+	width: 25%;
+	height: 45px;
+	text-align: center;
+	border-right-style: solid;
+	border-right-width: 2px;
+	border-right-color: #2e2e2e;
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+.col img {
+	margin-right: 20%;
+	margin-left: -20%;
+}
+
+.col span {
+	position: fixed;
+}
+
+.matchDiv #hometeam {
+	position: absolute;
+	z-index: 2;
+	height: 60px;
+	weight: 60px;
+	top: -20px;
+	margin-left: 7%;
+	left: 0px;
+}
+
+.matchDiv #awayteam {
+	position: absolute;
+	z-index: 2;
+	height: 60px;
+	weight: 60px;
+	top: -20px;
+	margin-right: 7%;
+	right: 0px;
+}
+
+.matchDiv #pocetok {
+	text-align: center;
+}
+
+.matchDiv .match {
+	height: 65px;
+}
+
+#youjustbet h1 {
+	color: #ffdc0a;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 50px;
+	line-height: 90%;
+}
+
+#youjustbet h2 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	line-height: 90%;
+}
+
+#youjustbet h3 {
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	font-weight: normal;
+	margin-left: 30px;
+	margin-right: 30px;
+	line-height: 90%;
+}
+
+#youjustbet a,#youjustbet a:VISITED {
+	background-color: #c3c3c3;
+	border-radius: 12px;
+	padding: 6px 0 7px;
+	text-align: center;
+	text-shadow: 0 1px 1px #FFFFFF;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#youjustbet #publish {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 200px;
+	height: 41px;
+	background-image: url("/images/fb_publish.png");
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+#moreOption {
+	/*   border: solid thin fff;  */
+	border-collapse: collapse;
+	color: #fff;
+	width: 100%; /*
+	background-color: #2b2b2c;*/
+}
+
+#moreOption th,#moreOption td {
+	border-bottom: solid thin #373737;
+	text-align: left;
+	height: 30px;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+#moreOption th {
+	padding: 0.2em;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: normal;
+}
+
+#moreOption th:last-child>td {
+	border-bottom: none;
+}
+
+#moreOption td:HOVER {
+	background-color: #676767;
+}
+
+#moreOption td.selected {
+	background-color: #FADB07;
+	color: #000000;
+}
+
+.zolto {
+	color: #FADB07;
+}
+
+#banner-left {
+  right: 50%;
+  margin-right: 204px;
+  position: fixed;
+  top: 50px;
+  z-index: 9;
+}
+
+#banner-right {
+  right: 50%;
+  margin-right: -334px;
+  position: fixed;
+  top: 50px;
+  z-index: 9;
+}

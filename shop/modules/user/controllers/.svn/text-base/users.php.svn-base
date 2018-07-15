@@ -1,0 +1,191 @@
+<?php
+class Users extends User_Controller {
+	public function __construct() {
+		parent::__construct ();
+		loader::lib ( "User" );
+	}
+	public function index() {
+
+	
+		
+	
+	}
+	public function usertest() {
+		$data = array ();
+		
+		return view ( "theme/public", $data, false );
+	}
+	
+	public function resetpassword($hash = 0) {
+		
+		$data = array();
+		$data['main'] = 'user/resetpassword';
+		$data['error'] = "";
+		if (i_post()) {
+			
+			$password = i_post('password');
+			$password_comfirm = i_post('password_comfirm');
+			$user = User::find(array('id'=>i_post('uid')));
+			
+			if ($password == $password_comfirm) {
+				$user->setPassword(md5(i_post('password')));
+				$user->update();
+				$data['user'] = $user;
+				$data['password_change'] = 1;
+				return view ( "../theme/public", $data, false );
+			} else {
+				
+				$data['user'] = $user;
+				$data['error'] = "Password doesnt match";
+				$data['password_change'] = 0;
+				return view ( "../theme/public", $data, false );
+			}
+		}
+		
+		if ($hash) {
+			$data['password_change'] = 0;
+			
+			$data['main'] = 'user/resetpassword';
+			$data['password_change'] = 0;
+			$data['user'] = User::getByPasswordHash($hash);
+			
+			
+		return view ( "../theme/public", $data, false );		
+		} else {
+			redirect(base_url());
+		}
+	}
+	
+	public function forgotpassword() 
+	{
+		$data = array ();
+		$data['main'] = 'user/forgotpassword';
+		$data['password_change'] = 0;
+		if (i_post()) {
+			
+			$email = i_post('email');
+			$user = user::getByEmail($email);
+			
+			if ($user instanceof  User) {
+			$forgot_password_hash = md5(time());
+			
+			$user->setForgotPassword($forgot_password_hash);
+			$user->update();
+			$url = base_url();
+			$html = "";
+			$html .= "Please click <a href='".$url."/user/users/resetpassword/".$forgot_password_hash."' target='_blank' >here</a> to reset your password"; 
+			
+			$to      = $user->getEmail();
+			$subject = 'VetFriend24 - Password Change';
+			$message = $html;
+			$headers = 'From: no-replay@vetfriend24.kriiptin.com' . "\r\n" .
+					'Reply-To: no-replay@vetfriend24.kriiptin.com' . "\r\n" .
+					'MIME-Version: 1.0\r\n'.
+					'Content-Type: text/html; charset=ISO-8859-1\r\n'.
+					'X-Mailer: PHP/' . phpversion();
+			
+			mail($to, $subject, $message, $headers);
+			
+			// send email
+			
+			$data['password_change'] = 1;
+			}
+		}
+		
+		return view ( "../theme/public", $data, false );
+	}
+	
+	public function login() {
+		$data = array ();
+		$data ['errors'] = array ();
+		$data ['main'] = 'user/login';
+		$data ['active_menu'] ['login'] = 1;
+		if (i_post ()) {
+			
+			$userexist = i_post ( "userexist" );
+			if ($userexist == 1) {
+				// login
+				$user = User::login ( array (
+						'email' => i_post ( 'email' ),
+						'password' => i_post ( 'password' ) 
+				) );
+				
+				if ($user) {
+					
+					$_SESSION ['user'] = current ( $user );
+					redirect ( "/user/dashboard" );
+				} 
+
+				else {
+					$data ['errors'] = lang ( "Please try agian!" );
+					return view ( "../theme/public", $data, false );
+				}
+			} 
+
+			else {
+				
+				$_SESSION ['email_new_user'] = i_post ( 'email' );
+				
+				redirect ( '/user/register' );
+				// register and login
+			}
+		}
+		
+		return view ( "../theme/public", $data, false );
+	}
+	public function register() {
+		if (! isset ( $_SESSION ['email_new_user'] )) {
+			redirect ( '/user/login' );
+		}
+		
+		$data = array ();
+		$data ['main'] = 'user/register';
+		$data ['errors'] = false;
+		$data ['active_menu'] ['login'] = 1;
+		
+		if (i_post ()) {
+			$password = i_post ( 'password' );
+			$comfirm_password = i_post ( 'comfirm_password' );
+			
+			$email = i_post ( 'email' );
+			$comfirm_email = i_post ( 'email_confirm' );
+			
+			if ($password == $comfirm_password) {
+				
+				if ($email === $comfirm_email) {
+					
+					$user = new User ();
+					$user->setFirstName ( i_post ( 'name' ) );
+					$user->setEmail ( $_SESSION ['email_new_user'] );
+					$user->setPassword ( md5 ( $password ) );
+					
+					$id = $user->insert ();
+					
+					$_user = User::login ( array (
+							'email' => $_SESSION ['email_new_user'],
+							'password' => i_post ( 'password' ) 
+					) );
+					
+					if ($_user) {
+						
+						$_SESSION ['user'] = current ( $_user );
+						redirect ( "/user/dashboard" );
+					}
+				}
+				$data ['errors'] = lang ( "Email does not match!" );
+				
+				return view ( "../theme/public", $data, false );
+			}
+			
+			$data ['errors'] = lang ( "Passwords does not match!" );
+		}
+		
+		return view ( "../theme/public", $data, false );
+	}
+	public function logout() {
+		User::logout ();
+		
+		redirect ( "/user/login" );
+	}
+
+}

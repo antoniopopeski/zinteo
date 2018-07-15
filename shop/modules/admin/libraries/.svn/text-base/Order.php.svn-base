@@ -1,0 +1,27 @@
+<?php
+
+class Order extends AppCore {
+	
+	public function __construct() {
+		parent::__construct();
+	}
+	
+	protected $id;
+	protected $userid;
+	protected $productid;
+	protected $deliveryaddressid;
+	protected $invoiceaddressid;
+	protected $quantity;
+	protected $status;
+	protected $date;
+	protected $paymentid;
+	protected $paymenttypeid;
+	protected $vetid;
+
+
+	
+
+
+	
+
+}

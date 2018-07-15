@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingAgreementsFunctionalTest
+END
+testGet.json
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingAgreementsFunctionalTest/testGet.json
+END
+testExecute.json
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingAgreementsFunctionalTest/testExecute.json
+END
+testBillBalance.json
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingAgreementsFunctionalTest/testBillBalance.json
+END
+testCreateWithOverride.json
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingAgreementsFunctionalTest/testCreateWithOverride.json
+END
+testGetCancelled.json
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingAgreementsFunctionalTest/testGetCancelled.json
+END
+testCreateCCAgreement.json
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingAgreementsFunctionalTest/testCreateCCAgreement.json
+END
+testSetBalance.json
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingAgreementsFunctionalTest/testSetBalance.json
+END
+testCancel.json
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingAgreementsFunctionalTest/testCancel.json
+END
+testUpdate.json
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingAgreementsFunctionalTest/testUpdate.json
+END
+testSuspend.json
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingAgreementsFunctionalTest/testSuspend.json
+END
+testCreatePayPalAgreement.json
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingAgreementsFunctionalTest/testCreatePayPalAgreement.json
+END
+testGetTransactions.json
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingAgreementsFunctionalTest/testGetTransactions.json
+END
+testReactivate.json
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingAgreementsFunctionalTest/testReactivate.json
+END
+testGetSuspended.json
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingAgreementsFunctionalTest/testGetSuspended.json
+END

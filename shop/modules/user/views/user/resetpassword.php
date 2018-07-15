@@ -1,0 +1,51 @@
+
+<main>
+<div class="title">
+	<h2><?php echo lang("Reset password")?></h2>
+</div>
+<h2><?php echo $error?></h2>
+<?php if ($password_change == 0) {?>
+<form class="form-horizontal" method="post">
+<input type="hidden" name="uid" value="<?php echo $user->getId()?>" />
+	<div class="form-group">
+		<label for="inputEmail3" class="col-sm-3 control-label"><?php
+		echo lang ( "Enter your password" )?>:</label>
+		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+			<input type="password" class="form-control" name="password" id="password"
+				placeholder="">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="inputEmail3" class="col-sm-3 control-label"><?php
+		echo lang ( "Confirm your password" )?>:</label>
+		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+			<input type="password" class="form-control" name="password_comfirm" id="password_comfirm"
+				placeholder="">
+		</div>
+	</div>
+	
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 checkbox submit">
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+			<button id="button-login" class="btn-orange left" type="submit"><?php echo lang("Submit")?></button>
+		</div>
+	</div>
+
+
+
+</form>
+<?php } elseif ($password_change == 1) {?>
+<p><?php echo lang("Your password was changed")?></p>
+<p><a href="<?php echo base_url()?>/user/login"><?php echo lang("Click here to login")?></a></p>
+<?php } ?>
+</main>
+
+<script>
+	$(function(){
+		$(".header").find("ul").hide();
+	})
+	</script>
+
+
+

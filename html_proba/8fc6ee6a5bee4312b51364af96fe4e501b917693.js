@@ -1,0 +1,37 @@
+
+var TimeoutMaxRequests=30;var TimeoutCount=0;window.addEventListener("load",function(){setTimeout(function(){window.scrollTo(0,1);},0);});var count=0;var loadingText="Connecting ";function LoadingConnect()
+{switch(count)
+{case 0:$(".FacebookConnect").html(loadingText);break;case 4:count=-1;break;default:$(".FacebookConnect").html($(".FacebookConnect").html()+".");break;}
+count++;setTimeout(function(){LoadingConnect();},500);}
+$(document).ready(function(){$(".FacebookConnect").click(function(event){event.preventDefault();if($(".FacebookConnect").attr("clicked")!="true"){LoadingConnect();$(".FacebookConnect").attr("clicked","true").css({"font-weight":"bold","padding-left":"82px","width":"165"});setTimeout(function(){window.location.href=$(".FacebookConnect").attr("href");},1000);}})})
+$.fn.input=function(fn){var $this=this;if(!fn){return $this.trigger('keydown.input');}
+return $this.bind({'input.input':function(event){$this.unbind('keydown.input');fn.call(this,event);},'keydown.input':function(event){fn.call(this,event);}});};var SearchRequest;var LoadMoreRequest;var LoadMorePages=false;var token=(access_token=="")?"511450802262127|MnhPJPe0yb2HyKvfGimL6MsYZd8":access_token;var NextPage="";function FormatFacebookItem(item){var li=$(document.createElement("li"));var form=$(document.createElement("form")).attr("method","GET").attr("action","/facebook/CreateApp");var id=$(document.createElement("input")).attr("type","hidden").attr("id","id").attr("name","id").val(item.id);var category=$(document.createElement("input")).attr("type","hidden").attr("id","category").attr("name","category").val(item.category);var email=$(document.createElement("input")).attr("type","hidden").attr("id","email").attr("name","email").val($("#FacebookEmail").val());var name=$(document.createElement("input")).attr("type","hidden").attr("id","name").attr("name","name").val($("#FacebookName").val());var a=$(document.createElement("a")).attr("action","submit").attr("href","#").click(function(event){event.preventDefault();$(this).parent().submit();});var bgimg=(item.id==undefined)?"":"https://graph.facebook.com/"+item.id+"/picture?type=large";var span=$(document.createElement("span")).css({"background-image":"url("+bgimg+")"});var h6=$(document.createElement("h6")).html(item.name);var p=$(document.createElement("p")).html(item.category);var submit=$(document.createElement("input")).attr("type","submit").attr("value","Submit");$(a).append(span).append(h6).append(p);$(form).append(id).append(email).append(name).append(category);if($("#FacebookSsoId").val()!==undefined){$(form).append($(document.createElement("input")).attr("type","hidden").attr("id","ssoid").attr("name","ssoid").val($("#FacebookSsoId").val()))}
+else{$(form).attr("action","/facebook/CreateUser");}
+$(form).append(a).append(submit)
+$(li).append($(form));return $(li);}
+function LoadingMoreItem()
+{var li=$(document.createElement("li")).addClass("LoadingMore");var div=$(document.createElement("div"));var span=$(document.createElement("span")).html("Loading more");$(div).append(span);$(li).append(div);return li;}
+function AddAutoComplete(){$('[action="autoComplete"]').autocomplete({source:function(request,response){SearchRequest=$.ajax({url:"https://graph.facebook.com/search",dataType:"jsonp",data:{access_token:token,q:$('[action="autoComplete"]').val(),type:"page",fields:"name,category",limit:10},success:function(data){response($.map(data.data,function(item){return{item:item}}));if(data["paging"]!=null){NextPage=data.paging.next;if(data.data.length==10)
+{LoadMorePages=true;if($(".LoadingMore").length==0){$(".ui-autocomplete").append(LoadingMoreItem());}}}}});},appendTo:'.FacebookAutoComplete'}).input(function(event){if(event.currentTarget.value.length<2){if(typeof LoadMoreRequest!==undefined&&LoadMoreRequest!=null){LoadMoreRequest.abort();}
+if(typeof SearchRequest!==undefined&&SearchRequest!=null){SearchRequest.abort();}}});$.ui.autocomplete.prototype._renderItem=function(ul,item){return FormatFacebookItem(item.item).appendTo(ul);}}
+function LoadMore(){LoadMorePages=false;LoadMoreRequest=$.ajax({url:NextPage,dataType:"jsonp",success:function(data){$(".LoadingMore").remove();for(var i=0;i<data.data.length;i++){$(".ui-autocomplete").append(FormatFacebookItem(data.data[i]));}
+NextPage=data.paging.next;if(data.data.length>0){LoadMorePages=true;if($(".LoadingMore").length==0)
+{$(".ui-autocomplete").append(LoadingMoreItem());}}},error:function(xhr,ajaxOptions,thrownError){}});}
+function ScrollLazyLoad(){if($(".connect").length>0)
+{$(document).scroll(function(e){var scrollAmount=$(window).scrollTop();var documentHeight=$(".MainBody").outerHeight()+$("header").outerHeight()-$("body").outerHeight();var scrollPercent=(scrollAmount/documentHeight)*100;if(scrollPercent>90&&LoadMorePages){LoadMore();}});}}
+$(document).ready(function(){$('[action="submit"]').click(function(event){event.preventDefault();$(this).parent().submit();});$('[action="ShowAutoComplete"]').click(function(event){event.preventDefault();$(this).parent().addClass("none");$(".autoCompleteField").removeClass("none")
+$(".FacebookAutoComplete ul:not(.ui-autocomplete)").addClass("none");$('[action="autoComplete"]').focus();});AddAutoComplete();ScrollLazyLoad();$('input:text, input:password').input(function(event){$('.error').addClass('none');if(event.currentTarget.value==""){if($(this).siblings("label").hasClass("none")){$(this).siblings("label").removeClass("none");}}
+else{if(!$(this).siblings("label").hasClass("none")){$(this).siblings("label").addClass("none");}}}).blur(function(){if($(this).val()==""){if($(this).siblings("label").hasClass("none")){$(this).siblings("label").removeClass("none");}}
+else{if(!$(this).siblings("label").hasClass("none")){$(this).siblings("label").addClass("none");}}}).focus(function(){$('.error').addClass('none');}).each(function(){if($(this).val()!=""){$(this).siblings("label").addClass("none");}});$(".Whats").click(function(event){event.preventDefault();if($(".description").hasClass("none")){$(".description").removeClass("none");$(".triangle").addClass("overlay");}
+else{$(".description").addClass("none");$(".triangle").removeClass("overlay");}});})
+function CreateApp()
+{if(typeof FacebookPageId!==undefined&&typeof SsoId!==undefined)
+{var cat=(typeof category!==undefined)?category:"";$.ajax({type:"POST",dataType:"json",data:{id:FacebookPageId,SsoId:SsoId,email:email,category:cat},success:function(data){InsertApp(data.appId,email);},error:function(xhr,ajaxOptions,thrownError){}})}}
+function GetApp()
+{CreateApp();}
+function CheckApp(guid,mail){if(guid==""){console.log("Error: No App was created");return;}
+if(TimeoutCount>TimeoutMaxRequests)
+{console.log("Error: Check App Requetst exceeded max");setTimeout(function(){window.location.href="/Facebook/AppPreview?appid="+guid+"&email="+mail+"&NewUser="+NewUser;},1000);return;}
+var AppServiceCheckDomain=FacebookDiscoveryAppServiceCheckDomain||"http://ams.mobile.ams.conduit-services.com/";$.ajax({url:AppServiceCheckDomain+guid,dataType:"jsonp",success:function(data){if(data.error==null){window.location.href="/Facebook/AppPreview?appid="+guid+"&email="+mail+"&NewUser="+NewUser;}
+else{TimeoutCount++;setTimeout(function(){CheckApp(guid,mail);},1000);}},error:function(xhr,ajaxOptions,thrownError){TimeoutCount++;setTimeout(function(){CheckApp(guid,mail);},1000);}});}
+function InsertApp(guid,mail){CheckApp(guid,mail);}

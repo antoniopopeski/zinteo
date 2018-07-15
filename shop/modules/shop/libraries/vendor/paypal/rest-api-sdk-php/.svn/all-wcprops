@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/vetshopsvn/!svn/ver/763/modules/shop/libraries/vendor/paypal/rest-api-sdk-php
+END
+generate-api.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/generate-api.sh
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/LICENSE.txt
+END
+.travis.yml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/.travis.yml
+END
+phpunit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/phpunit.xml
+END
+.coveralls.yml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/.coveralls.yml
+END
+composer.json
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/composer.json
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/.gitignore
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/README.md
+END
+phpunit.integration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/phpunit.integration.xml
+END
+release_notes.md
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/release_notes.md
+END
+.editorconfig
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/.editorconfig
+END

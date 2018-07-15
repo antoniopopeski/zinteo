@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingPlansFunctionalTest
+END
+testGet.json
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingPlansFunctionalTest/testGet.json
+END
+testGetList.json
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingPlansFunctionalTest/testGetList.json
+END
+testCreateWithNOChargeModel.json
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingPlansFunctionalTest/testCreateWithNOChargeModel.json
+END
+testCreate.json
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingPlansFunctionalTest/testCreate.json
+END
+testUpdateChangingPD.json
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingPlansFunctionalTest/testUpdateChangingPD.json
+END
+testUpdateChangingState.json
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingPlansFunctionalTest/testUpdateChangingState.json
+END
+testUpdateChangingMerchantPreferences.json
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/BillingPlansFunctionalTest/testUpdateChangingMerchantPreferences.json
+END

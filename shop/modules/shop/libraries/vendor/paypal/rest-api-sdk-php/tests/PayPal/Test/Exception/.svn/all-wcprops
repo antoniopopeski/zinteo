@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Exception
+END
+PayPalInvalidCredentialExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Exception/PayPalInvalidCredentialExceptionTest.php
+END
+PayPalMissingCredentialExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Exception/PayPalMissingCredentialExceptionTest.php
+END
+PayPalConfigurationExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Exception/PayPalConfigurationExceptionTest.php
+END
+PayPalConnectionExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Exception/PayPalConnectionExceptionTest.php
+END

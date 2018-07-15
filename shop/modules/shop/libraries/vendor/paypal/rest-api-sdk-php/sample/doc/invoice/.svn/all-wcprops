@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/invoice
+END
+RecordRefund.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/invoice/RecordRefund.html
+END
+RemindInvoice.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/invoice/RemindInvoice.html
+END
+GetInvoice.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/invoice/GetInvoice.html
+END
+RecordPayment.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/invoice/RecordPayment.html
+END
+SendInvoice.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/invoice/SendInvoice.html
+END
+UpdateInvoice.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/invoice/UpdateInvoice.html
+END
+CancelInvoice.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/invoice/CancelInvoice.html
+END
+DeleteInvoice.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/invoice/DeleteInvoice.html
+END
+CreateInvoice.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/invoice/CreateInvoice.html
+END
+ListInvoice.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/invoice/ListInvoice.html
+END
+SearchInvoices.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/invoice/SearchInvoices.html
+END
+RetrieveQRCode.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/invoice/RetrieveQRCode.html
+END

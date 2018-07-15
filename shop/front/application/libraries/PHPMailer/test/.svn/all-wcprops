@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/test
+END
+testbootstrap-dist.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/test/testbootstrap-dist.php
+END
+fakepopserver.sh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/test/fakepopserver.sh
+END
+phpmailerLangTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/test/phpmailerLangTest.php
+END
+bootstrap.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/test/bootstrap.php
+END
+phpmailerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/test/phpmailerTest.php
+END
+test_callback.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/test/test_callback.php
+END
+fakesendmail.sh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/test/fakesendmail.sh
+END
+runfakepopserver.sh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/test/runfakepopserver.sh
+END

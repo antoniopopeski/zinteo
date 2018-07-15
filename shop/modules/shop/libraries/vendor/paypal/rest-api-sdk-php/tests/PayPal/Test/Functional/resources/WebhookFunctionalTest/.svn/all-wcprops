@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/WebhookFunctionalTest
+END
+testGetEvent.json
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/WebhookFunctionalTest/testGetEvent.json
+END
+testGet.json
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/WebhookFunctionalTest/testGet.json
+END
+testEventResend.json
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/WebhookFunctionalTest/testEventResend.json
+END
+testEventSearch.json
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/WebhookFunctionalTest/testEventSearch.json
+END
+testCreate.json
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/WebhookFunctionalTest/testCreate.json
+END
+testDelete.json
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/WebhookFunctionalTest/testDelete.json
+END
+webhook_get_available_event_types.json
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/WebhookFunctionalTest/webhook_get_available_event_types.json
+END
+testGetAll.json
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/WebhookFunctionalTest/testGetAll.json
+END
+testGetSubscribedEventTypes.json
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/WebhookFunctionalTest/testGetSubscribedEventTypes.json
+END
+testUpdate.json
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/WebhookFunctionalTest/testUpdate.json
+END

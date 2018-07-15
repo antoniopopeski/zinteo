@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/vetshopsvn/!svn/ver/1296/modules/shop/views/shop
+END
+insertdeliveryaddress.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/vetshopsvn/!svn/ver/718/modules/shop/views/shop/insertdeliveryaddress.php
+END
+placeorder.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/vetshopsvn/!svn/ver/1240/modules/shop/views/shop/placeorder.php
+END
+banktransfer.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/vetshopsvn/!svn/ver/1292/modules/shop/views/shop/banktransfer.php
+END
+invoice.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/vetshopsvn/!svn/ver/724/modules/shop/views/shop/invoice.php
+END
+veterinarian.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/vetshopsvn/!svn/ver/1214/modules/shop/views/shop/veterinarian.php
+END
+product.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/vetshopsvn/!svn/ver/1136/modules/shop/views/shop/product.php
+END
+insertinvoiceaddress.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/vetshopsvn/!svn/ver/725/modules/shop/views/shop/insertinvoiceaddress.php
+END
+paymenttype.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/vetshopsvn/!svn/ver/948/modules/shop/views/shop/paymenttype.php
+END
+myorders.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/vetshopsvn/!svn/ver/1296/modules/shop/views/shop/myorders.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/vetshopsvn/!svn/ver/1347/modules/shop/views/shop/index.php
+END
+success.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/vetshopsvn/!svn/ver/1111/modules/shop/views/shop/success.php
+END
+delivery.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/vetshopsvn/!svn/ver/1293/modules/shop/views/shop/delivery.php
+END

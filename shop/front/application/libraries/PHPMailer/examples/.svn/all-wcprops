@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/examples
+END
+pop_before_smtp.phps
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/examples/pop_before_smtp.phps
+END
+mail.phps
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/examples/mail.phps
+END
+smtp.phps
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/examples/smtp.phps
+END
+exceptions.phps
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/examples/exceptions.phps
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/examples/index.html
+END
+mailing_list.phps
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/examples/mailing_list.phps
+END
+code_generator.phps
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/examples/code_generator.phps
+END
+sendmail.phps
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/examples/sendmail.phps
+END
+smtp_check.phps
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/examples/smtp_check.phps
+END
+gmail.phps
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/examples/gmail.phps
+END
+send_file_upload.phps
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/examples/send_file_upload.phps
+END
+smtp_no_auth.phps
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/examples/smtp_no_auth.phps
+END
+contents.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/examples/contents.html
+END

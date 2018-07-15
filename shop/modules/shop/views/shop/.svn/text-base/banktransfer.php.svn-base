@@ -1,0 +1,93 @@
+<?php 
+$invoiceaddress = InvoiceAddress::find(array('id'=>$order->getInvoiceAddressId()));
+$product = Product::find(array('id' => $order->getProductId()));
+
+?>
+<main>
+	<div style="display:block; position:relative; margin-bottom: 70px;">
+		<div class="company-name">
+	  		<h1><?php echo $invoiceaddress->getFirstName()?> <?php echo $invoiceaddress->getLastName()?></h1>
+	  		<p><?php echo lang("Address")?>: <?php echo $invoiceaddress->getStreet()?> <?php echo $invoiceaddress->getStreetNo()?>, <?php echo $invoiceaddress->getZip()?>,</p>
+	  		<p><?php echo $invoiceaddress->getCity()?>, <?php echo $invoiceaddress->getCountry()?></p>
+		</div>
+		<div class="invoice-right">
+	  		<h1><?php echo lang("Invoice")?>: <?php echo $order->getId()?>/2015</h1>
+	  		<p><?php echo lang("Date")?>: <?php echo $order->getDate()?></p>	
+		</div>
+	</div>
+      <div class="quantity-product-list">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"><?php echo lang("Quantity")?></div>
+			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5"><?php echo lang("Product")?></div>
+			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+				<div style="text-align: right;padding: 0px;" class="col-xs-12 col-sm-8 col-md-8 col-lg-8"><?php echo lang("Unit Price")?></div>
+				<div style="text-align: right;padding: 0px;" class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><?php echo lang("Subtotal")?></div>
+			</div>
+	</div>
+      </div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 items">
+ 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 item product-list">
+			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"><?php echo $order->getQuantity()?> </div>
+			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5"><?php echo $product->getName()?></div>
+	<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+			<div style="text-align:right;" class="col-xs-12 col-sm-8 col-md-8 col-lg-8"><?php if ($order->getCurrency() == 'eur'){
+		echo '&euro;' . $product->getEurPrice();
+		$subtotal = $order->getQuantity() * $product->getEurPrice();
+		$currency = '&euro;';
+	} elseif ($order->getCurrency() == 'gbp') {
+		echo '&pound;' . $product->getGBPPrice();
+		$subtotal = $order->getQuantity() * $product->getGBPPrice();
+		$currency = '&pound;';
+	}elseif ($order->getCurrency() == 'pln') {
+		echo 'PLN ' . $product->getPLnPrice();
+		$subtotal = $order->getQuantity() * $product->getPLnPrice();
+		$currency = 'PLN';
+	}
+	?></div>
+			<div style="text-align:right;" class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><?php echo $currency?> <?php echo number_format($subtotal,2,',','.')?></div>
+        </div>
+		</div>
+
+        </div>
+<div class="notes-content">
+     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 border">
+	<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 total">
+	    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8"><?php echo lang("Total without tax")?></div>
+	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">404,25 €</div>
+	    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">VAT 23%</div>
+	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">120,75 €</div>
+	</div>
+    </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 total">
+	    <div class="col-xs-12 col-sm-11 col-md-11 col-lg-11 total-sum">Total 525 €</div>
+	</div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="company-name">
+	  		<h1>Notes:</h1>
+	  		<p><?php echo lang("Delivery Type")?>: Once a month</p>
+	  		<p><?php echo lang("Delivery time")?>: 3 days</p>	
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 payed-title">
+		<h2>Payed in advance</h2>
+	</div>
+</div>
+<div class="payment-details">
+		<div class="company-name">
+	  		<h1>PAYMENT DETAILS</h1>
+	  		<p>BARCLAYS</p>
+	  		<p>Bank/Sort Code: 20-54-78</p>                                                                                   
+			<p>Account Number: 8650511</p>
+			<p>IBAN: GB23BARC20077186050511</p>
+			<p>BIC: BARCGB22</p>
+			<p>VAT Number: GB155557293</p>
+			<p style="font-weight:700;"><?php echo lang("Payment Refference Number")?>: 0235687</p>
+		</div>
+		<div class="invoice-right">
+	  		<h2><?php echo lang("OTHER INFORMATION")?></h2>
+	  		<p><?php echo lang("Comany Registration Number")?>: 7954389</p>
+			<p><?php echo lang("Registered in")?>: England and Wales</p>	
+		</div>
+	</div>
+</main>
+

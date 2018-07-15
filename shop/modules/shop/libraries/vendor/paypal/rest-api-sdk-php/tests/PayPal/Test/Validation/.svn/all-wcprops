@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Validation
+END
+ArgumentValidatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Validation/ArgumentValidatorTest.php
+END
+ModelAccessValidatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Validation/ModelAccessValidatorTest.php
+END
+NumericValidatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Validation/NumericValidatorTest.php
+END
+JsonValidatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Validation/JsonValidatorTest.php
+END
+UrlValidatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Validation/UrlValidatorTest.php
+END

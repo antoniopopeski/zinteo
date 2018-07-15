@@ -1,0 +1,249 @@
+<?php $num_delivery_address = count($deliveryaddress)?>
+<main>
+
+
+<div class="title">
+            <h2><?php echo lang("Delivery/Invoice Address")?></h2>
+            <h5><?php echo lang("Delivery Address")?></h5>
+            <?php if ($num_delivery_address >= 1) {?>
+	    <h4><?php echo lang("Please choose one of the previously entered delivery addresses")?></h4>
+	    <?php }?>
+        </div>
+
+<form class="form-horizontal" method="post">        
+<?php $count_addr = 1;?>
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 boxs">
+<?php foreach ($deliveryaddress as $da) {?>
+   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+       <div class="address">
+           <p><?php echo $da->firstname . " " . $da->lastname?></p>
+			<p><?php echo $da->street . " " . $da->streetno?></p>
+			<p><?php echo $da->city?>, <?php echo $da->zip?>, <?php echo $da->country?></p>
+			<input type="radio" value="<?php echo $da->id?>"
+				<?php echo ($count_addr == 1) ? "checked='checked'" : ""?>
+				name="selected_delivery_address">
+       </div>
+    </div>
+     <?php $count_addr++;?>
+<?php }?>  
+</div>
+<?php if ($num_delivery_address >= 1) {?>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 boxs">
+<a id="add-delivery-address" href="#"><?php echo lang("Or, enter new delivery address")?></a>
+
+</div>
+<?php }?>
+<div id="please-enter-new-delivery-address" style="display:none" class="form-group">
+    <label class="col-sm-3 control-label" for=""></label>
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+      <h4><?php echo lang("Please enter new delivery address")?></h4>
+    </div>
+  </div>
+
+
+
+
+
+
+	<div id="new-delivery-address"
+		<?php echo ($num_delivery_address > 0) ? 'style="display:none"' : ''?>>
+		<div class="form-group">
+			<label for="" class="col-sm-3 control-label"><?php echo lang("First Name")?> ?</label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="text" class="form-control" name="firstname"
+					id="firstName" placeholder="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="LastName" class="col-sm-3 control-label"><?php echo lang("Last Name")?></label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="text" class="form-control" id="lastname"
+					name="lastname" placeholder="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="street" class="col-sm-3 control-label"><?php echo lang("Street")?></label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="text" class="form-control" id="street" name="street"
+					placeholder="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="" class="col-sm-3 control-label"><?php echo lang("Street No.")?></label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="text" class="form-control" id="streetno"
+					name="streetno" placeholder="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="zipcode" class="col-sm-3 control-label"><?php echo lang("Zip-Code")?></label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="number" class="form-control" name="zip" placeholder="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="city" class="col-sm-3 control-label"><?php echo lang("City")?></label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="text" class="form-control" name="city" placeholder="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="" class="col-sm-3 control-label"><?php echo lang("Country")?></label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="text" class="form-control" name="country"
+					placeholder="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="telefon" class="col-sm-3 control-label"><?php echo lang("Telefon")?></label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="number" class="form-control" name="phone"
+					placeholder="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="email" class="col-sm-3 control-label"><?php echo lang("Email")?></label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="text" class="form-control" name="email" placeholder="">
+			</div>
+		</div>
+
+	</div>
+
+
+ <h5 style="font-weight:700;"><?php echo lang("Invoice Address")?></h5>
+ <div class="form-group" style="margin:0px;">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 checkbox">
+    <label class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+         <input	name="invoiceaddress" value="1" type="radio" checked="checked"><?php echo lang("Invoice Address is same as delivery address")?>
+    </label>
+  </div>
+
+ <div class="form-group" style="margin:0px!important; padding:0px;">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 checkbox">
+    <label class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+     <input	name="invoiceaddress" value="2" type="radio"><?php echo lang("Or, enter new invoice address")?>
+    </label>
+</div>
+</div>
+
+
+
+
+
+	<div id="new-invoice-address" style="display: none">
+	<div class="form-group">
+	    <label for="" class="col-sm-3 control-label"></label>
+	    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+	      <h4>Please enter invoice address</h4>
+	    </div>
+	  </div>
+		<div class="form-group">
+			<label for="" class="col-sm-3 control-label"><?php echo lang("First Name")?>?</label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="text" class="form-control" name="firstname_i"
+					id="firstname_i" placeholder="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="LastName" class="col-sm-3 control-label"><?php echo lang("Last Name")?></label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="text" class="form-control" id="lastname_i"
+					name="lastname_i" placeholder="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="street" class="col-sm-3 control-label"><?php echo lang("Street")?></label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="text" class="form-control" id="street_i"
+					name="street_i" placeholder="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="" class="col-sm-3 control-label"><?php echo lang("Street No.")?></label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="text" class="form-control" id="streetno_i"
+					name="streetno_i" placeholder="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="zipcode" class="col-sm-3 control-label"><?php echo lang("Zip-Code")?></label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="number" class="form-control" name="zip_i"
+					placeholder="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="city" class="col-sm-3 control-label"><?php echo lang("City")?></label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="text" class="form-control" name="city_i" placeholder="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="" class="col-sm-3 control-label"><?php echo lang("Country")?></label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="text" class="form-control" name="country_i"
+					placeholder="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="telefon" class="col-sm-3 control-label"><?php echo lang("Telefon")?></label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="number" class="form-control" name="phone_i"
+					placeholder="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="email" class="col-sm-3 control-label"><?php echo lang("Email")?></label>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<input type="text" class="form-control" name="email_i"
+					placeholder="">
+			</div>
+		</div>
+
+	</div>
+
+	<div class="form-group">
+		<label for="" class="col-sm-3 control-label"></label>
+		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+			<button class="btn-orange" type="submit"><?php echo lang("Continue")?></button>
+		</div>
+	</div>
+
+
+
+
+</form>
+</main>
+<script>
+
+$("input[name='invoiceaddress']").click(function(){
+	var clicked_val = $(this).val();
+
+	if (clicked_val == 1) {
+		$("#new-invoice-address").hide();
+	} 
+	if (clicked_val == 2) {
+		$("#new-invoice-address").show();
+	}
+});
+
+$("#add-delivery-address").click(function(e){
+	e.preventDefault();
+	var visible = $("#new-delivery-address").toggle();
+
+	if ($("#new-delivery-address").is(":visible")) {
+		$("input[name='selected_delivery_address']").attr('checked',false);
+		$("#please-enter-new-delivery-address").show();
+		console.log('visible');
+	} else {
+		$("#please-enter-new-delivery-address").hide();
+		console.log('not visible');
+		$("input[name='selected_delivery_address']:first").attr('checked','checked');
+	}
+	
+
+
+})
+</script>

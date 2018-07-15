@@ -1,0 +1,74 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2017-02-23 00:02:28 --> 404 Page Not Found --> robots.txt
+ERROR - 2017-02-23 01:18:35 --> 404 Page Not Found --> robots.txt
+ERROR - 2017-02-23 01:21:46 --> 404 Page Not Found --> robots.txt
+ERROR - 2017-02-23 01:21:47 --> 404 Page Not Found --> xmlrpc.php
+ERROR - 2017-02-23 01:21:47 --> 404 Page Not Found --> wordpress
+ERROR - 2017-02-23 01:21:47 --> 404 Page Not Found --> wp
+ERROR - 2017-02-23 01:43:15 --> Severity: Warning  --> mysqli_connect(): (28000/1045): Access denied for user 'usr'@'localhost' (using password: YES) /var/sentora/hostdata/zinteo/public_html/zinteo_com/system/database/drivers/mysqli/mysqli_driver.php 76
+ERROR - 2017-02-23 01:43:15 --> Unable to connect to the database
+ERROR - 2017-02-23 01:43:15 --> 404 Page Not Found --> apple-touch-icon-120x120-precomposed.png
+ERROR - 2017-02-23 01:43:16 --> 404 Page Not Found --> apple-touch-icon-120x120.png
+ERROR - 2017-02-23 01:43:16 --> 404 Page Not Found --> apple-touch-icon-precomposed.png
+ERROR - 2017-02-23 01:43:16 --> 404 Page Not Found --> apple-touch-icon.png
+ERROR - 2017-02-23 01:43:16 --> 404 Page Not Found --> favicon.ico
+ERROR - 2017-02-23 01:43:16 --> 404 Page Not Found --> apple-touch-icon-120x120-precomposed.png
+ERROR - 2017-02-23 01:43:16 --> 404 Page Not Found --> apple-touch-icon-120x120.png
+ERROR - 2017-02-23 01:43:16 --> 404 Page Not Found --> apple-touch-icon-precomposed.png
+ERROR - 2017-02-23 01:43:16 --> 404 Page Not Found --> apple-touch-icon.png
+ERROR - 2017-02-23 01:43:16 --> 404 Page Not Found --> favicon.ico
+ERROR - 2017-02-23 07:00:59 --> 404 Page Not Found --> robots.txt
+ERROR - 2017-02-23 08:41:24 --> Severity: Warning  --> mysqli_connect(): (28000/1045): Access denied for user 'usr'@'localhost' (using password: YES) /var/sentora/hostdata/zinteo/public_html/zinteo_com/system/database/drivers/mysqli/mysqli_driver.php 76
+ERROR - 2017-02-23 08:41:24 --> Unable to connect to the database
+ERROR - 2017-02-23 08:41:25 --> 404 Page Not Found --> apple-touch-icon-120x120-precomposed.png
+ERROR - 2017-02-23 08:41:25 --> 404 Page Not Found --> apple-touch-icon-120x120.png
+ERROR - 2017-02-23 08:41:25 --> 404 Page Not Found --> apple-touch-icon-precomposed.png
+ERROR - 2017-02-23 08:41:25 --> 404 Page Not Found --> apple-touch-icon.png
+ERROR - 2017-02-23 08:41:25 --> 404 Page Not Found --> favicon.ico
+ERROR - 2017-02-23 08:41:25 --> 404 Page Not Found --> apple-touch-icon-120x120-precomposed.png
+ERROR - 2017-02-23 08:41:25 --> 404 Page Not Found --> apple-touch-icon-120x120.png
+ERROR - 2017-02-23 08:41:25 --> 404 Page Not Found --> apple-touch-icon-precomposed.png
+ERROR - 2017-02-23 08:41:25 --> 404 Page Not Found --> apple-touch-icon.png
+ERROR - 2017-02-23 08:41:25 --> 404 Page Not Found --> favicon.ico
+ERROR - 2017-02-23 15:14:50 --> Severity: Warning  --> mysqli_connect(): (28000/1045): Access denied for user 'usr'@'localhost' (using password: YES) /var/sentora/hostdata/zinteo/public_html/zinteo_com/system/database/drivers/mysqli/mysqli_driver.php 76
+ERROR - 2017-02-23 15:14:50 --> Unable to connect to the database
+ERROR - 2017-02-23 15:14:50 --> 404 Page Not Found --> apple-touch-icon-120x120-precomposed.png
+ERROR - 2017-02-23 15:14:50 --> 404 Page Not Found --> apple-touch-icon-120x120.png
+ERROR - 2017-02-23 15:14:50 --> 404 Page Not Found --> apple-touch-icon-precomposed.png
+ERROR - 2017-02-23 15:14:50 --> 404 Page Not Found --> apple-touch-icon.png
+ERROR - 2017-02-23 15:14:50 --> 404 Page Not Found --> favicon.ico
+ERROR - 2017-02-23 15:14:50 --> 404 Page Not Found --> apple-touch-icon-120x120-precomposed.png
+ERROR - 2017-02-23 15:14:50 --> 404 Page Not Found --> apple-touch-icon-120x120.png
+ERROR - 2017-02-23 15:14:51 --> 404 Page Not Found --> apple-touch-icon-precomposed.png
+ERROR - 2017-02-23 15:14:51 --> 404 Page Not Found --> apple-touch-icon.png
+ERROR - 2017-02-23 15:14:51 --> 404 Page Not Found --> favicon.ico
+ERROR - 2017-02-23 15:16:08 --> Severity: Warning  --> mysqli_connect(): (28000/1045): Access denied for user 'usr'@'localhost' (using password: YES) /var/sentora/hostdata/zinteo/public_html/zinteo_com/system/database/drivers/mysqli/mysqli_driver.php 76
+ERROR - 2017-02-23 15:16:08 --> Unable to connect to the database
+ERROR - 2017-02-23 15:16:08 --> 404 Page Not Found --> apple-touch-icon-120x120-precomposed.png
+ERROR - 2017-02-23 15:16:08 --> 404 Page Not Found --> apple-touch-icon-120x120.png
+ERROR - 2017-02-23 15:16:09 --> 404 Page Not Found --> apple-touch-icon-precomposed.png
+ERROR - 2017-02-23 15:16:09 --> 404 Page Not Found --> apple-touch-icon.png
+ERROR - 2017-02-23 15:16:09 --> 404 Page Not Found --> favicon.ico
+ERROR - 2017-02-23 15:16:09 --> 404 Page Not Found --> apple-touch-icon-120x120-precomposed.png
+ERROR - 2017-02-23 15:16:09 --> 404 Page Not Found --> apple-touch-icon-120x120.png
+ERROR - 2017-02-23 15:16:09 --> 404 Page Not Found --> apple-touch-icon-precomposed.png
+ERROR - 2017-02-23 15:16:09 --> 404 Page Not Found --> apple-touch-icon.png
+ERROR - 2017-02-23 15:16:09 --> 404 Page Not Found --> favicon.ico
+ERROR - 2017-02-23 18:27:02 --> 404 Page Not Found --> robots.txt
+ERROR - 2017-02-23 18:38:07 --> 404 Page Not Found --> wp-login.php
+ERROR - 2017-02-23 18:38:07 --> 404 Page Not Found --> administrator
+ERROR - 2017-02-23 18:38:08 --> 404 Page Not Found --> admin.php
+ERROR - 2017-02-23 19:50:33 --> 404 Page Not Found --> robots.txt
+ERROR - 2017-02-23 21:19:12 --> Severity: Warning  --> mysqli_connect(): (28000/1045): Access denied for user 'usr'@'localhost' (using password: YES) /var/sentora/hostdata/zinteo/public_html/zinteo_com/system/database/drivers/mysqli/mysqli_driver.php 76
+ERROR - 2017-02-23 21:19:12 --> Unable to connect to the database
+ERROR - 2017-02-23 21:19:12 --> 404 Page Not Found --> apple-touch-icon-120x120-precomposed.png
+ERROR - 2017-02-23 21:19:12 --> 404 Page Not Found --> apple-touch-icon-120x120.png
+ERROR - 2017-02-23 21:19:12 --> 404 Page Not Found --> apple-touch-icon-precomposed.png
+ERROR - 2017-02-23 21:19:12 --> 404 Page Not Found --> apple-touch-icon.png
+ERROR - 2017-02-23 21:19:12 --> 404 Page Not Found --> favicon.ico
+ERROR - 2017-02-23 21:19:12 --> 404 Page Not Found --> apple-touch-icon-120x120-precomposed.png
+ERROR - 2017-02-23 21:19:12 --> 404 Page Not Found --> apple-touch-icon-120x120.png
+ERROR - 2017-02-23 21:19:12 --> 404 Page Not Found --> apple-touch-icon-precomposed.png
+ERROR - 2017-02-23 21:19:12 --> 404 Page Not Found --> apple-touch-icon.png
+ERROR - 2017-02-23 21:19:13 --> 404 Page Not Found --> favicon.ico

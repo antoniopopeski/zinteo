@@ -1,0 +1,27 @@
+<?php
+class Orders extends Admin_Controller {
+	public function __construct() {
+		parent::__construct ();
+		
+		loader::lib("PaymentType");
+		loader::lib("Product");
+		loader::lib("Order");
+		loader::lib('../user/User');
+		loader::lib('../shop/Veterinars');
+		loader::lib('../shop/DeliveryAddress');
+		
+	}
+	public function index() {
+		
+		$data = array();
+		$data['main'] = "orders/index";
+		$data['page_title'] = lang("Orders");
+		
+		$data['orders'] = Order::find(array('orderby'=>'desc','sortby'=>'id'));
+		
+		return view ( "../theme/admin", $data, false );
+		
+	}
+	
+	
+}

@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+
+body {
+	width: 100%;
+	background: transparent;
+}
+
+#contentWrapper {
+	width: 100%;
+}
+
+#podvizno {
+	width: 100%;
+}
+
+#pageTitle {
+	top: 15px;
+	font-size: 14px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#placebet {
+	width: 100%;
+}
+
+#footer {
+	width: 100%;
+}
+
+#balans_footer {
+	width: 100%;
+}
+
+#leaderboard {
+	width: 100%;
+}
+
+#leaderboard #col2>a {
+	max-width: 140px;
+}

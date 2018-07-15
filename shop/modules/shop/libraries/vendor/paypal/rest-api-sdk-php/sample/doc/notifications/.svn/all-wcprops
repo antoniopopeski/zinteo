@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/notifications
+END
+ValidateWebhookEvent.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/notifications/ValidateWebhookEvent.html
+END
+SearchWebhookEvents.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/notifications/SearchWebhookEvents.html
+END
+WebhookEventTypesList.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/notifications/WebhookEventTypesList.html
+END
+DeleteAllWebhooks.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/notifications/DeleteAllWebhooks.html
+END
+GetWebhook.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/notifications/GetWebhook.html
+END
+UpdateWebhook.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/notifications/UpdateWebhook.html
+END
+ListSubscribedWebhookEventTypes.html
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/notifications/ListSubscribedWebhookEventTypes.html
+END
+DeleteWebhook.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/notifications/DeleteWebhook.html
+END
+CreateWebhook.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/notifications/CreateWebhook.html
+END
+ListWebhooks.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/notifications/ListWebhooks.html
+END

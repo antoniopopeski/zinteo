@@ -1,0 +1,13 @@
+
+<main>
+        <div class="title">
+            <h2>Payment successfully made.</h2>
+	    <h5>Thanks for purchasing. Your prouct is expected to arrive in 5 days.</h5>
+        </div>
+
+<form class="form-horizontal">
+    
+    <a href="<?php echo base_url()?>shop/myorders" class="btn-orange" >see list of your orders</a>
+</form>
+</main>
+

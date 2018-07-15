@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Core
+END
+PayPalLoggingLevel.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Core/PayPalLoggingLevel.php
+END
+PayPalConfigManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Core/PayPalConfigManager.php
+END
+PayPalHttpConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Core/PayPalHttpConnection.php
+END
+PayPalConstants.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Core/PayPalConstants.php
+END
+PayPalHttpConfig.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Core/PayPalHttpConfig.php
+END
+PayPalLoggingManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Core/PayPalLoggingManager.php
+END
+cacert.pem
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Core/cacert.pem
+END
+PayPalCredentialManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Core/PayPalCredentialManager.php
+END

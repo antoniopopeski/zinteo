@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Validation
+END
+JsonValidator.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Validation/JsonValidator.php
+END
+ModelAccessorValidator.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Validation/ModelAccessorValidator.php
+END
+UrlValidator.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Validation/UrlValidator.php
+END
+ArgumentValidator.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Validation/ArgumentValidator.php
+END
+NumericValidator.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Validation/NumericValidator.php
+END

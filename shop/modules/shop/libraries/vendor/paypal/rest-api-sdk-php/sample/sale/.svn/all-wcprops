@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/sale
+END
+GetSale.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/sale/GetSale.php
+END
+RefundSale.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/sale/RefundSale.php
+END

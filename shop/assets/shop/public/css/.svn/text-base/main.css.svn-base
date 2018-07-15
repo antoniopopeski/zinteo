@@ -1,0 +1,1243 @@
+/* SASS HELPERS */
+/* BASE STYLESHEET AND RESETTER */
+/*----- CSS RESET -----*/
+/* Basic Styles Reset */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \000035
+	}
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000312
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000318
+	}
+}
+
+img {
+	display: block;
+	border: 0;
+}
+
+/* Content Holders & HTML5 Elements */
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000325
+	}
+}
+
+div, article, aside, details, figcaption, figure, footer, header, hgroup,
+	main, nav, section, summary {
+	display: block;
+	zoom: 1;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000330
+	}
+}
+
+div:after, article:after, aside:after, details:after, figcaption:after,
+	figure:after, footer:after, header:after, hgroup:after, main:after, nav:after,
+	section:after, summary:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000336
+	}
+}
+
+audio, canvas, progress, video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000341
+	}
+}
+
+audio:not ([controls] ), [hidden], template {
+	display: none;
+	height: 0;
+}
+
+/* Form Elements */
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000348
+	}
+}
+
+button {
+	overflow: visible;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000352
+	}
+}
+
+button, select {
+	text-transform: none;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000356
+	}
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"]
+	{
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000361
+	}
+}
+
+button[disabled], html input[disabled] {
+	cursor: default;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000365
+	}
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000370
+	}
+}
+
+input {
+	line-height: normal;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000374
+	}
+}
+
+input[type="checkbox"], input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000379
+	}
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button
+	{
+	height: auto;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000383
+	}
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000389
+	}
+}
+
+legend {
+	border: 0;
+	padding: 0;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \0000394
+	}
+}
+
+textarea {
+	overflow: auto;
+}
+
+/* Tables */
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \00003100
+	}
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_reset\.scss
+	}
+	line {
+		font-family: \00003105
+	}
+}
+
+td, th {
+	padding: 0;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family: file\:\/\/C\:\/wamp\/www\/Forma\/sass\/base\/_base\.scss
+	}
+	line {
+		font-family: \000032
+	}
+}
+
+body {
+	overflow-x: hidden;
+	background-color: #54390e;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/* CUSTOM SITE COMPONENTS */
+/* MAIN SITE REGIONS */
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+	}
+	line {
+		font-family: \000031
+	}
+}
+
+.wrapper {
+	width: 70%;
+	margin: auto;
+	background-color: #fff;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+	}
+	line {
+		font-family: \000036
+	}
+}
+
+.wrapper .header {
+	padding: 0px 40px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+	}
+	line {
+		font-family: \000039
+	}
+}
+
+.wrapper .header .fa {
+	display: none;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+	}
+	line {
+		font-family: \0000313
+	}
+}
+
+.wrapper .header .logo {
+	float: left;
+	padding: 20px 0px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+	}
+	line {
+		font-family: \0000318
+	}
+}
+
+.wrapper .header ul {
+	float: right;
+	margin: 20px 0px;
+	border-top: 3px solid #f8f8f8;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+	}
+	line {
+		font-family: \0000323
+	}
+}
+
+.wrapper .header ul li {
+	display: inline-block;
+	padding: 15px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+	}
+	line {
+		font-family: \0000328
+	}
+}
+
+.wrapper .header ul li a {
+	color: grey;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+	}
+	line {
+		font-family: \0000334
+	}
+}
+
+.wrapper .header ul li a:hover {
+	color: #f09f1e;
+}
+
+@media screen and (max-width: 1024px) {
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+		}
+		line {
+			font-family: \0000348
+		}
+	}
+	.wrapper .header .logo {
+		float: none;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+		}
+		line {
+			font-family: \0000351
+		}
+	}
+	.wrapper .header .logo img {
+		margin: auto;
+		text-align: center;
+		padding: 20px 0px;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+		}
+		line {
+			font-family: \0000358
+		}
+	}
+	.wrapper .header .fa {
+		display: block;
+		float: right;
+		font-size: 30px;
+		margin-top: -55px;
+		cursor: pointer;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+		}
+		line {
+			font-family: \0000366
+		}
+	}
+	.wrapper .header ul {
+		display: none;
+		float: none;
+		margin: 20px 0px;
+		border-top: none;
+		width: 100%;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+		}
+		line {
+			font-family: \0000378
+		}
+	}
+	.wrapper .header ul li {
+		display: block;
+		padding: 15px;
+		width: 100%;
+		text-align: center;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+		}
+		line {
+			font-family: \0000384
+		}
+	}
+	.wrapper .header ul li:hover {
+		background-color: #54390e;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+		}
+		line {
+			font-family: \0000388
+		}
+	}
+	.wrapper .header ul li a {
+		color: grey;
+		font-size: 18px;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+		}
+		line {
+			font-family: \00003103
+		}
+	}
+	.wrapper .header {
+		padding: 0px 0px;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_header\.scss
+		}
+		line {
+			font-family: \00003107
+		}
+	}
+	.wrapper .fa {
+		margin-right: 20px;
+	}
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_footer\.scss
+	}
+	line {
+		font-family: \000033
+	}
+}
+
+footer p {
+	text-align: center;
+	font-size: 20px;
+	padding: 0px 0px 20px 0px;
+}
+
+@media screen and (max-width: 767px) {
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/layout\/_footer\.scss
+		}
+		line {
+			font-family: \0000313
+		}
+	}
+	footer p {
+		font-size: 14px;
+	}
+}
+/* MAIN SITE PAGES */
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \000033
+	}
+}
+
+.wrapper main {
+	padding: 30px 40px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \000037
+	}
+}
+
+.wrapper main .title h2 {
+	font-size: 25px;
+	color: #f09f1e;
+	float: left;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \0000313
+	}
+}
+
+.wrapper main .title h4 {
+	color: #f09f1e;
+	font-size: 18px;
+	display: inline-block;
+	width: 100%;
+	margin-top: 10px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \0000320
+	}
+}
+
+.wrapper main .title h5 {
+	color: #543912;
+	font-size: 20px;
+	display: inline-block;
+	width: 100%;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \0000327
+	}
+}
+
+.wrapper main .title a {
+	float: right;
+	color: #54390e;
+	font-size: 20px;
+	line-height: 35px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \0000335
+	}
+}
+
+.wrapper main form {
+	border: none;
+	border-bottom: 3px solid #54390e;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \0000339
+	}
+}
+
+.wrapper main form .gform-body {
+	border: none;
+	margin-bottom: 35px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \0000345
+	}
+}
+
+.wrapper main form .gform-body ul li {
+	width: 100%;
+	display: block;
+	padding: 30px 0px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \0000350
+	}
+}
+
+.wrapper main form .gform-body ul li label {
+	float: left;
+	font-size: 20px;
+	color: #54390e;
+	width: 25%;
+	text-align: right;
+	line-height: 30px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \0000359
+	}
+}
+
+.wrapper main form .gform-body ul li input {
+	width: 70%;
+	padding: 8px;
+	border: 1px solid #6d5631;
+	float: right;
+	color: #f09f1e;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \0000367
+	}
+}
+
+.wrapper main form .gform-body ul li .password {
+	float: left;
+	margin-top: 20px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \0000372
+	}
+}
+
+.wrapper main form .gform-body ul .information-content {
+	margin-top: 50px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \0000376
+	}
+}
+
+.wrapper main form .gform-body ul .checkbox {
+	width: 70%;
+	float: right;
+	padding: 10px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \0000381
+	}
+}
+
+.wrapper main form .gform-body ul .checkbox .name {
+	float: right !important;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \0000384
+	}
+}
+
+.wrapper main form .gform-body ul .checkbox span {
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \0000388
+	}
+}
+
+.wrapper main form .gform-body ul .checkbox img {
+	margin-left: 20px;
+	margin-top: -15px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \0000393
+	}
+}
+
+.wrapper main form .gform-body ul .checkbox input[type=checkbox] {
+	float: left;
+	width: auto;
+	margin-top: 3px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \0000399
+	}
+}
+
+.wrapper main form .gform-body ul .checkbox button {
+	width: 100%;
+	padding: 15px;
+	background-color: #ee9200;
+	color: #fff;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 18px;
+	text-align: left;
+	padding-left: 25px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \00003113
+	}
+}
+
+.wrapper main form .gform-body ul .submit {
+	padding: 20px 0px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \00003116
+	}
+}
+
+.wrapper main form .gform-body ul .submit button {
+	width: 70%;
+	padding: 15px 50px;
+	float: left;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \00003122
+	}
+}
+
+.wrapper main form .gform-body ul .submit a {
+	width: 70%;
+	display: inline-block;
+	margin-top: 20px;
+	text-align: center;
+	color: #54390e;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \00003135
+	}
+}
+
+.wrapper main .delivery-form {
+	margin-top: 30px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \00003138
+	}
+}
+
+.wrapper main .delivery-form h2 {
+	float: none;
+	margin-bottom: 25px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \00003143
+	}
+}
+
+.wrapper main .delivery-form h3 {
+	color: #543912;
+	font-size: 20px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \00003150
+	}
+}
+
+.wrapper main .summary {
+	border-bottom: none;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \00003154
+	}
+}
+
+.wrapper main .items {
+	border-bottom: 2px solid;
+	width: 100%;
+	line-height: 70px;
+	font-size: 25px;
+}
+
+@media -sass-debug-info {
+	filename {
+		font-family:
+			file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+	}
+	line {
+		font-family: \00003160
+	}
+}
+
+.wrapper main .items a {
+	text-decoration: none;
+	color: grey;
+}
+
+@media screen and (max-width: 1024px) {
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003181
+		}
+	}
+	.wrapper main form .gform-body ul li label {
+		width: 100%;
+		text-align: left;
+		margin-top: 10px;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003187
+		}
+	}
+	.wrapper main form .gform-body ul li input {
+		width: 100%;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003194
+		}
+	}
+	.wrapper main form .gform-body ul .submit button {
+		width: 100%;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003198
+		}
+	}
+	.wrapper main form .gform-body ul .submit a {
+		width: 100%;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003202
+		}
+	}
+	.wrapper main form .gform-body ul .checkbox {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003215
+		}
+	}
+	.wrapper {
+		width: 80%;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003218
+		}
+	}
+	.wrapper main {
+		padding: 20px 20px;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003222
+		}
+	}
+	.wrapper main .title h2 {
+		font-size: 18px;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003225
+		}
+	}
+	.wrapper main .title h3, .wrapper main .title h4, .wrapper main .title h5
+		{
+		font-size: 16px;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003228
+		}
+	}
+	.wrapper main .title a {
+		font-size: 16px;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003241
+		}
+	}
+	.wrapper main form .gform-body ul li label {
+		font-size: 14px;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003249
+		}
+	}
+	.wrapper main form .gform-body ul .checkbox span {
+		font-size: 14px;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003253
+		}
+	}
+	.wrapper main form .gform-body ul .checkbox button {
+		font-size: 14px;
+		text-align: center;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003262
+		}
+	}
+	.wrapper main .items {
+		line-height: 50px;
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003274
+		}
+	}
+	.wrapper main {
+		padding: 20px 20px;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003285
+		}
+	}
+	.wrapper main form .gform-body ul .checkbox button {
+		font-size: 9px;
+	}
+	@media -sass-debug-info {
+		filename {
+			font-family:
+				file\:\/\/C\:\/wamp\/www\/Forma\/sass\/pages\/_homepage\.scss
+		}
+		line {
+			font-family: \00003288
+		}
+	}
+	.wrapper main form .gform-body ul .checkbox img {
+		margin-left: 20px;
+		margin-top: -10px;
+		width: 170px;
+	}
+}
+/* PAGE SPECIFIC ELEMENTS & STYLES */

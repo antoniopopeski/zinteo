@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/PaymentsFunctionalTest
+END
+testGet.json
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/PaymentsFunctionalTest/testGet.json
+END
+testExecute.json
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/PaymentsFunctionalTest/testExecute.json
+END
+testGetPending.json
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/PaymentsFunctionalTest/testGetPending.json
+END
+testRefundSale.json
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/PaymentsFunctionalTest/testRefundSale.json
+END
+testCreate.json
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/PaymentsFunctionalTest/testCreate.json
+END
+testGetSale.json
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/PaymentsFunctionalTest/testGetSale.json
+END
+testCreateWallet.json
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/tests/PayPal/Test/Functional/resources/PaymentsFunctionalTest/testCreateWallet.json
+END

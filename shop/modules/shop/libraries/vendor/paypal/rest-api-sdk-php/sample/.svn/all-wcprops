@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/vetshopsvn/!svn/ver/763/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample
+END
+common.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/common.php
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/README.md
+END
+bootstrap.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/vetshopsvn/!svn/ver/763/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/bootstrap.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/index.php
+END
+header.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/header.html
+END
+sdk_config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/vetshopsvn/!svn/ver/758/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/sdk_config.ini
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/.htaccess
+END

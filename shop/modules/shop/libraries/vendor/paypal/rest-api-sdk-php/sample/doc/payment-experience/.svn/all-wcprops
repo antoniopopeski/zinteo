@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payment-experience
+END
+CreateWebProfile.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payment-experience/CreateWebProfile.html
+END
+ListWebProfiles.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payment-experience/ListWebProfiles.html
+END
+DeleteWebProfile.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payment-experience/DeleteWebProfile.html
+END
+UpdateWebProfile.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payment-experience/UpdateWebProfile.html
+END
+PartiallyUpdateWebProfile.html
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payment-experience/PartiallyUpdateWebProfile.html
+END
+GetWebProfile.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payment-experience/GetWebProfile.html
+END

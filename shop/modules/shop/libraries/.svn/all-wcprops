@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/vetshopsvn/!svn/ver/879/modules/shop/libraries
+END
+InvoiceAddress.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/vetshopsvn/!svn/ver/722/modules/shop/libraries/InvoiceAddress.php
+END
+Veterinars.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/vetshopsvn/!svn/ver/1152/modules/shop/libraries/Veterinars.php
+END
+composer.json
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/composer.json
+END
+composer.phar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/composer.phar
+END
+Order.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/vetshopsvn/!svn/ver/1162/modules/shop/libraries/Order.php
+END
+composer.lock
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/composer.lock
+END
+DeliveryAddress.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/vetshopsvn/!svn/ver/706/modules/shop/libraries/DeliveryAddress.php
+END
+PaymentType.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/vetshopsvn/!svn/ver/679/modules/shop/libraries/PaymentType.php
+END
+Shop_Controller.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/vetshopsvn/!svn/ver/319/modules/shop/libraries/Shop_Controller.php
+END

@@ -1,0 +1,532 @@
+<?php
+use PayPal\Api\Amount;
+use PayPal\Api\Details;
+use PayPal\Api\Item;
+use PayPal\Api\ItemList;
+use PayPal\Api\Payer;
+use PayPal\Api\Payment;
+use PayPal\Api\RedirectUrls;
+use PayPal\Api\Transaction;
+class Shop extends Shop_Controller {
+	public function __construct() {
+		parent::__construct ();
+		
+		loader::lib ( "../admin/Product" );
+		loader::lib ( "../admin/ProductCategory" );
+		loader::lib ( "../admin/Stock" );
+		loader::lib ( "../user/User" );
+	}
+	public function index($currency='eur') {
+		
+		$data = array ();
+
+		$data ['main'] = "shop/index";
+		$_SESSION['currency'] = $currency;
+		$data['first_filter'] = 'show_all';
+		$data['last_filter'] = 'date';
+		if (i_post()) {
+			$first_filter = i_post('first_filter');
+			$last_filter = i_post('last_filter');
+			$filter = array('first_serach'=>$first_filter, 'last_search' => $last_filter);
+			$data ['products'] = Product::getVariantsInStock ($filter);
+			$data['first_filter'] = i_post('first_filter');
+			$data['last_filter'] = i_post('last_filter');
+		} else {
+			$data ['products'] = Product::getVariantsInStock ($filter=array());
+		}
+		
+		$data['active_menu']['none'] = 1;
+		
+		
+		return view ( "../theme/public", $data, false );
+	}
+	
+	public function product($id) {
+		$data = array();
+		
+		$data['main'] = 'shop/product';
+		$data['product'] = Product::find(array('id' => $id));
+		
+		if (!Product::find(array('id' => $id))->getActive() AND !(isset($_SESSION['admin']))) {
+			redirect("/");
+		}
+		return view ( "../theme/public", $data, false );
+	}
+	public function checkout($id) {
+		$_SESSION ['itemid'] = $id;
+		
+		if (! is_logged ()) {
+			redirect ( "/user/login" );
+		}
+		
+		if (! isset ( $_SESSION ['vetid'] ) AND !isset($_SESSION['vetname'])) {
+			redirect ( "/shop/veterinarian" );
+		}
+		
+		redirect ( "/shop/delivery" );
+	}
+	public function insertinvoiceaddress() {
+		if (! is_logged ()) {
+			redirect ( "/user/login" );
+		}
+		
+		if (! isset ( $_SESSION ['vetid'] )) {
+			redirect ( "/shop/veterinarian" );
+		}
+		
+		$data ['main'] = 'shop/insertinvoiceaddress';
+		$data ['page_title'] = lang ( "Insert new invoice address - Vetfriend24" );
+		if (i_post ()) {
+			
+			$invoiceaddress = new InvoiceAddress ();
+			$invoiceaddress->setId ( 0 )->setUserId ( $_SESSION ['user']->id )->setFirstName ( i_post ( 'firstname' ) )->setLastName ( i_post ( 'lastname' ) )->setStreet ( i_post ( 'street' ) )->setStreetNo ( i_post ( 'streetno' ) )->setZip ( i_post ( 'zip' ) )->setCity ( i_post ( 'city' ) )->setCountry ( i_post ( 'country' ) )->setPhone ( i_post ( 'phone' ) )->setEmail ( i_post ( 'email' ) );
+			
+			$invoiceaddress->insert ();
+			
+			redirect ( '/shop/invoice' );
+		}
+		
+		return view ( "../theme/shop", $data, false );
+	}
+	public function invoice() {
+		if (! is_logged ()) {
+			redirect ( "/user/login" );
+		}
+		
+		if (! isset ( $_SESSION ['vetid'] ) and !isset($_SESSION['vetname'])) {
+			redirect ( "/shop/veterinarian" );
+		}
+		
+		$data = array ();
+		
+		$data ['main'] = 'shop/invoice';
+		
+		$data ['invoiceaddress'] = InvoiceAddress::getForCurrentUser ( User::getCurrent ()->getId () );
+		
+		if (! $data ['invoiceaddress']) {
+			redirect ( "/shop/insertinvoiceaddress" );
+		}
+		
+		$data ['page_title'] = lang ( "Vetfriend24 - Invoice" );
+		
+		if (i_post ()) {
+			
+			$invoiceaddress = i_post ( 'invoiceaddress' );
+			
+			$_SESSION ['invoiceaddressid'] = $invoiceaddress;
+			
+			redirect ( '/shop/paymenttype' );
+		}
+		
+		return view ( "../theme/shop", $data, false );
+	}
+	public function insertdeliveryaddress() {
+		if (! is_logged ()) {
+			redirect ( "/user/login" );
+		}
+		
+		if (! isset ( $_SESSION ['vetid'] ) AND !isset($_SESSION['vetname'])) {
+			redirect ( "/shop/veterinarian" );
+		}
+		
+		$data ['main'] = 'shop/insertdeliveryaddress';
+		$data ['page_title'] = lang ( "Insert new delivery address - Vetfriend24" );
+		if (i_post ()) {
+			
+			$deliveryaddress = new DeliveryAddress ();
+			$deliveryaddress->setId ( 0 )->setUserId ( $_SESSION ['user']->id )->setFirstName ( i_post ( 'firstname' ) )->setLastName ( i_post ( 'lastname' ) )->setStreet ( i_post ( 'street' ) )->setStreetNo ( i_post ( 'streetno' ) )->setZip ( i_post ( 'zip' ) )->setCity ( i_post ( 'city' ) )->setCountry ( i_post ( 'country' ) )->setPhone ( i_post ( 'phone' ) )->setEmail ( i_post ( 'email' ) );
+			
+			$deliveryaddress->insert ();
+			
+			redirect ( '/shop/delivery' );
+		}
+		
+		return view ( "../theme/shop", $data, false );
+	}
+	public function delivery() {
+		if (! is_logged ()) {
+			redirect ( "/user/login" );
+		}
+		
+		if (! isset ( $_SESSION ['vetid'] ) AND !isset($_SESSION['vetname'])) {
+			redirect ( "/shop/veterinarian" );
+		}
+		
+		$data = array ();
+		
+		$data ['active_menu'] ['deliveryaddress'] = 1;
+		$data ['main'] = 'shop/delivery';
+		
+		$data ['deliveryaddress'] = DeliveryAddress::getForCurrentUser ( User::getCurrent ()->getId () );
+		
+		// if (!$data['deliveryaddress']){
+		// redirect("/shop/insertdeliveryaddress");
+		// }
+		
+		$data ['page_title'] = lang ( "Vetfriend24 - Delivery" );
+		
+		if (i_post ()) {
+			
+			if (isset ( $_POST ['selected_delivery_address'] )) {
+				$selected_delivery_address = i_post ( 'selected_delivery_address' );
+				
+				$deliveryaddress = DeliveryAddress::find ( array (
+						'id' => $selected_delivery_address 
+				) );
+				
+				$_SESSION ['deliveryaddressid'] = $selected_delivery_address;
+				
+				if (i_post ( 'invoiceaddress' ) == 1) {
+					
+					$invoiceaddress = new InvoiceAddress ();
+					$invoiceaddress->setId ( 0 )->setUserId ( $_SESSION ['user']->id )->setFirstName ( $deliveryaddress->getFirstName () )->setLastName ( $deliveryaddress->getLastName () )->setStreet ( $deliveryaddress->getStreet () )->setStreetNo ( $deliveryaddress->getStreetNo () )->setZip ( $deliveryaddress->getZip () )->setCity ( $deliveryaddress->getCity () )->setCountry ( $deliveryaddress->getCountry () )->setPhone ( $deliveryaddress->getPhone () )->setEmail ( $deliveryaddress->getEmail () );
+					
+					$invoiceid = $invoiceaddress->insert ();
+					
+					$_SESSION ['invoiceaddressid'] = $invoiceid;
+				} else {
+					$invoiceaddress = new InvoiceAddress ();
+					$invoiceaddress->setId ( 0 )->setUserId ( $_SESSION ['user']->id )->setFirstName ( i_post ( 'firstname_i' ) )->setLastName ( i_post ( 'lastname_i' ) )->setStreet ( i_post ( 'street_i' ) )->setStreetNo ( i_post ( 'streetno_i' ) )->setZip ( i_post ( 'zip_i' ) )->setCity ( i_post ( 'city_i' ) )->setCountry ( i_post ( 'country_i' ) )->setPhone ( i_post ( 'phone_i' ) )->setEmail ( i_post ( 'email_i' ) );
+					
+					$invoiceid = $invoiceaddress->insert ();
+					
+					$_SESSION ['invoiceaddressid'] = $invoiceid;
+				}
+				
+				redirect ( '/shop/paymenttype' );
+			}
+			
+			$deliveryaddress = new DeliveryAddress ();
+			$deliveryaddress->setId ( 0 )->setUserId ( $_SESSION ['user']->id )->setFirstName ( i_post ( 'firstname' ) )->setLastName ( i_post ( 'lastname' ) )->setStreet ( i_post ( 'street' ) )->setStreetNo ( i_post ( 'streetno' ) )->setZip ( i_post ( 'zip' ) )->setCity ( i_post ( 'city' ) )->setCountry ( i_post ( 'country' ) )->setPhone ( i_post ( 'phone' ) )->setEmail ( i_post ( 'email' ) );
+			
+			$deliveryid = $deliveryaddress->insert ();
+			
+			$_SESSION ['deliveryaddressid'] = $deliveryid;
+			
+			if (i_post ( 'invoiceaddress' ) == 1) { // same as delivery
+				
+				$invoiceaddress = new InvoiceAddress ();
+				$invoiceaddress->setId ( 0 )->setUserId ( $_SESSION ['user']->id )->setFirstName ( i_post ( 'firstname' ) )->setLastName ( i_post ( 'lastname' ) )->setStreet ( i_post ( 'street' ) )->setStreetNo ( i_post ( 'streetno' ) )->setZip ( i_post ( 'zip' ) )->setCity ( i_post ( 'city' ) )->setCountry ( i_post ( 'country' ) )->setPhone ( i_post ( 'phone' ) )->setEmail ( i_post ( 'email' ) );
+				
+				$invoiceid = $invoiceaddress->insert ();
+				
+				$_SESSION ['invoiceaddressid'] = $invoiceid;
+			} else {
+				
+				$invoiceaddress = new InvoiceAddress ();
+				$invoiceaddress->setId ( 0 )->setUserId ( $_SESSION ['user']->id )->setFirstName ( i_post ( 'firstname_i' ) )->setLastName ( i_post ( 'lastname_i' ) )->setStreet ( i_post ( 'street_i' ) )->setStreetNo ( i_post ( 'streetno_i' ) )->setZip ( i_post ( 'zip_i' ) )->setCity ( i_post ( 'city_i' ) )->setCountry ( i_post ( 'country_i' ) )->setPhone ( i_post ( 'phone_i' ) )->setEmail ( i_post ( 'email_i' ) );
+				
+				$invoiceid = $invoiceaddress->insert ();
+				
+				$_SESSION ['invoiceaddressid'] = $invoiceid;
+			}
+			
+			redirect ( '/shop/paymenttype' );
+		}
+		
+		return view ( "../theme/public", $data, false );
+	}
+	public function myorders() {
+		$data = array ();
+		$data ['main'] = 'shop/myorders';
+		
+		$data ['orders'] = Order::getOrderByUserId ( User::getCurrent ()->getId () );
+		return view ( '../theme/public', $data, false );
+	}
+	public function success() {
+		//print_r($_SERVER['QUERY_STRING']);die;
+		$params = explode ( "&", $_SERVER ['QUERY_STRING'] );
+	
+		if (count( $params ) > 2) {
+			$orderid = explode ( "=", $params [0] );
+			$paymentid = explode ( "=", $params [1] );
+			$token = explode ( "=", $params ['2'] );
+			
+			$order = Order::find ( array (
+					'id' => ($orderid [1]) 
+			) );
+			$stock = Stock::getByProductId ( $order->getProductId () );
+			
+			$stock [0]->setCount ( $stock [0]->getCount () - $order->getQuantity () );
+			$stock [0]->update ();
+			
+			$order->setPaymentId ( ($paymentid [1]) );
+			$order->setToken ( ($token [1]) );
+			
+			$order->update ();
+			redirect ( "/shop/success" );
+		}
+		
+		$data = array ();
+		$data ['page_title'] = lang ( "Payment Success - Vetshop24" );
+		$data ['main'] = 'shop/success';
+		$data['active_menu']['none'] = 1;
+		return view ( "../theme/public", $data, false );
+	}
+	public function placeorder() {
+		if (! is_logged ()) {
+			redirect ( "/user/login" );
+		}
+		
+		if (strpos ( $_SERVER ["HTTP_HOST"], "kriipton" ) !== false) {
+			
+			include $_SERVER ["DOCUMENT_ROOT"] . "/shop/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/bootstrap.php";
+		} else {
+			include $_SERVER ["DOCUMENT_ROOT"] . "/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/bootstrap.php";
+		}
+		
+		$data = array ();
+		$data['active_menu']['placeorder'] = 1;
+		$data ['product'] = Product::find ( array (
+				'id' => $_SESSION ['itemid'] 
+		) );
+		
+		if (isset($_SESSION['vetid'])) {
+		
+		$data ['veterinar'] = Veterinars::find ( array (
+				'id' => $_SESSION ['vetid'] 
+		) );
+		} else {
+			$data['veterinar'] = $_SESSION['vetname'] . " " . $_SESSION['vetcity'];
+		}
+		$data ['deliveryaddress'] = DeliveryAddress::find ( array (
+				'id' => $_SESSION ['deliveryaddressid'] 
+		) );
+		$data ['invoiceaddress'] = InvoiceAddress::find ( array (
+				'id' => $_SESSION ['invoiceaddressid'] 
+		) );
+		
+		$data ['main'] = 'shop/placeorder';
+		$data ['page_title'] = lang ( "Finish order - Vetfriend24" );
+		
+		if (i_post ()) {
+			
+			$order = new Order ();
+			$order
+				->setUserId( $_SESSION ['user']->id )
+				->setProductId( $_SESSION ['itemid'] )
+				->setDeliveryAddressId( $_SESSION ['deliveryaddressid'] )
+				
+				->setInvoiceAddressId( $_SESSION ['invoiceaddressid'] )
+				->setStatus ( 1 )
+				->setDate ( date ( "Y-m-d H:i:s" ) )
+				->setQuantity ( i_post ( 'quantity' ) )
+				->setCurrency($_SESSION['currency'])
+				->setPaymentTypeId ( $_SESSION['paymenttype'] ); // this should come rom session
+			
+			if (isset($_SESSION['vetname']) AND isset($_SESSION['vetcity'])) {
+				$order->setVetName($_SESSION['vetname']);
+				$order->setVetCity($_SESSION['vetcity']);
+				 
+			} else {
+				$order->setVetId($_SESSION['vetid']);
+			}
+			
+			$_o = $order->insert ();
+			
+			if ($_SESSION['paymenttype'] == 2) {
+				redirect('/shop/banktransfer/' . $_o);
+			}
+			
+			$product = Product::find ( array (
+					'id' => $_SESSION ['itemid'] 
+			) );
+			
+			if ($_SESSION['currency'] == 'eur') {
+				$price = $_POST ['quantity'] * $product->getEURPrice ();
+			} elseif ($_SESSION['currency'] == 'gbp') {
+				$price = $_POST ['quantity'] * $product->getGBPPrice ();
+			} elseif ($_SESSION['currency'] == 'pln') {
+				$price = $_POST ['quantity'] * $product->getPLNPrice ();
+			}
+			
+			$currency = 'EUR';
+			$_price = 	$product->getEURPrice ();
+			if ($_SESSION['currency'] == 'gbp') {
+				$currency = 'GBP';
+				$_price = $product->getGBPPrice();
+			}elseif ($_SESSION['currency'] == 'pln') {
+				$currency = 'PLN';
+				$_price = $product->getPLNPrice();
+			}
+			
+			
+			// ### Payer
+			// A resource representing a Payer that funds a payment
+			// For paypal account payments, set payment method
+			// to 'paypal'.
+			$payer = new Payer ();
+			$payer->setPaymentMethod ( "paypal" );
+			// ### Itemized information
+			// (Optional) Lets you specify item wise
+			// information
+			$item1 = new Item ();
+			$item1->setName ( $product->getName () )->setCurrency ( $currency )->setQuantity ( $_POST ['quantity'] )->setPrice ($_price );
+			
+			$itemList = new ItemList ();
+			$itemList->setItems ( array (
+					$item1 
+			) );
+			
+			$details = new Details ();
+			$details->setShipping ( 0 )->setTax ( 0 )->setSubtotal ( $price );
+			// ### Amount
+			// Lets you specify a payment amount.
+			// You can also specify additional details
+			// such as shipping, tax.
+			$amount = new Amount ();
+			
+		
+			
+			$amount->setCurrency ( $currency )->setTotal ( $price );
+			
+			// ### Transaction
+			// A transaction defines the contract of a
+			// payment - what is the payment for and who
+			// is fulfilling it.
+			$transaction = new Transaction ();
+			$transaction->setAmount ( $amount )->setItemList ( $itemList )->setDescription ( "Vetshop Payment" )->setInvoiceNumber ( uniqid () );
+			// ### Redirect urls
+			// Set the urls that the buyer must be redirected to after
+			// payment approval/ cancellation.
+			$baseUrl = getBaseUrl ();
+			$redirectUrls = new RedirectUrls ();
+			if (strpos ( $_SERVER ["HTTP_HOST"], "kriipton" ) !== false) {
+				$redirectUrls->setReturnUrl ( "$baseUrl/index.php/shop/success/?orderid=" . $_o )->setCancelUrl ( "$baseUrl/shop/cancel/?orderid=" . $_o );
+			} else {
+				$redirectUrls->setReturnUrl ( "$baseUrl/shop/success/?orderid=" . $_o )->setCancelUrl ( "$baseUrl/shop/cancel/?orderid=" . $_o );
+			}
+			
+			// ### Payment
+			// A Payment Resource; create one using
+			// the above types and intent set to 'sale'
+			$payment = new Payment ();
+			$payment->setIntent ( "authorize" )->setPayer ( $payer )->setRedirectUrls ( $redirectUrls )->setTransactions ( array (
+					$transaction 
+			) );
+			// For Sample Purposes Only.
+			$request = clone $payment;
+			// ### Create Payment
+			// Create a payment by calling the 'create' method
+			// passing it a valid apiContext.
+			// (See bootstrap.php for more on `ApiContext`)
+			// The return object contains the state and the
+			// url to which the buyer must be redirected to
+			// for payment approval
+			try {
+				$payment->create ( $apiContext );
+			} catch ( Exception $ex ) {
+				// NOTE: PLEASE DO NOT USE RESULTPRINTER CLASS IN YOUR ORIGINAL CODE. FOR SAMPLE ONLY
+				ResultPrinter::printError ( "Created Payment Authorization Using PayPal. Please visit the URL to Authorize.", "Payment", null, $request, $ex );
+				exit ( 1 );
+			}
+			// ### Get redirect url
+			// The API response provides the url that you must redirect
+			// the buyer to. Retrieve the url from the $payment->getLinks()
+			// method
+			$approvalUrl = $payment->getApprovalLink ();
+			// NOTE: PLEASE DO NOT USE RESULTPRINTER CLASS IN YOUR ORIGINAL CODE. FOR SAMPLE ONLY
+			foreach ( $payment->getLinks () as $link ) {
+				if ($link->getRel () == 'approval_url') {
+					$approvalUrl = $link->getHref ();
+					header ( 'Location:' . $approvalUrl );
+					break;
+				}
+			}
+			
+			// ResultPrinter::printResult("Created Payment Authorization Using PayPal. Please visit the URL to Authorize.", "Payment", "<a href='$approvalUrl' >$approvalUrl</a>", $request, $payment);
+			return $payment;
+		}
+		return view ( "../theme/public", $data, false );
+	}
+	
+	
+	public function banktransfer($orderid) {
+		$data = array();
+		$data['active_menu']['paymenttype'] = 1;
+		$data ['main'] = 'shop/banktransfer';
+		$data ['page_title'] = lang ( "Payment type - Vetfriend24" );
+		
+		$data['order'] = Order::find(array('id'=>$orderid));
+		
+		return view ( "../theme/public", $data, false );
+	}
+	
+	public function paymenttype() {
+		if (! is_logged ()) {
+			redirect ( "/user/login" );
+		}
+		
+		$data = array ();
+		$data['active_menu']['paymenttype'] = 1;
+		$data ['main'] = 'shop/paymenttype';
+		$data ['page_title'] = lang ( "Payment type - Vetfriend24" );
+		$data ['types'] = PaymentType::find ();
+		
+		if (i_post ()) {
+			
+			$paymenttypeid = i_post ( 'type' );
+			
+			$user = User::getCurrent ();
+			$user->setPaymentTypeId ( $paymenttypeid );
+			$user->update ();
+		
+			$_SESSION['paymenttype'] = i_post('type');
+			
+			redirect ( "/shop/placeorder" );
+			
+			
+		}
+		
+		return view ( "../theme/public", $data, false );
+	}
+	
+	
+	public function getvetinfo() {
+		
+		$id = i_post('id');
+		
+		$veterinar = Veterinars::find(array('id' => $id));
+		
+		echo $veterinar->getCity();
+	}
+	
+	public function veterinarian() {
+		$data = array ();
+		
+		if (! is_logged ()) {
+			redirect ( "/user/login" );
+		}
+		
+		$data ['main'] = 'shop/veterinarian';
+		
+		$data ['vets'] = Veterinars::find ();
+		$data ['page_title'] = lang ( "Vetfriend24 - Few Questions" );
+		
+		if (i_post ()) {
+		
+			if ($_POST['vetname'] AND $_POST['vetcity']) {
+				$_SESSION['vetname'] = i_post("vetname");
+				$_SESSION['vetcity'] =  i_post("vetcity");
+			} elseif($_POST['veterianid']) {
+				
+				$_SESSION ['vetid'] = i_post ( "veterianid" );
+			}
+		
+			// name, city ..
+			redirect ( "/shop/delivery" );
+		}
+		
+		$data ['active_menu'] ['veterian'] = 1;
+		return view ( "../theme/public", $data, false );
+	}
+	public function getvetbyname() {
+		if (i_ajax ()) {
+			$vetname = i_post ( "vetname" );
+			
+			$vets = Veterinars::findByName ( $vetname );
+			
+			print_r ( $vets );
+		}
+	}
+}

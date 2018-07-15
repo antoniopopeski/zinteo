@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Handler
+END
+RestHandler.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Handler/RestHandler.php
+END
+IPayPalHandler.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Handler/IPayPalHandler.php
+END
+OauthHandler.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/lib/PayPal/Handler/OauthHandler.php
+END

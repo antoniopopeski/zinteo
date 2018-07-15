@@ -1,0 +1,9 @@
+<?php
+class Currency extends AppCore {
+	public function __construct() {
+		parent::__construct ();
+	}
+	protected $id;
+	protected $name;
+	protected $code;
+}

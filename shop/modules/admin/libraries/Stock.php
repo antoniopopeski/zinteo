@@ -1,0 +1,20 @@
+<?php
+class Stock extends AppCore {
+	public function __construct() {
+		parent::__construct ();
+	}
+	protected $id;
+	protected $productid;
+	protected $productcategoryid;
+	protected $count;
+	public static function getByProductId($pid = 0, $obj = false) {
+		$query = DBApp::conn ()->select ()->where ( "productid", $pid );
+		
+		$result = $query->get ( strtolower ( get_called_class () ) )->as_class ( get_called_class () );
+		
+		if ($obj) {
+			return ($result) ? current ( $result ) : new self ();
+		}
+		return ($result) ? $result : new self ();
+	}
+}

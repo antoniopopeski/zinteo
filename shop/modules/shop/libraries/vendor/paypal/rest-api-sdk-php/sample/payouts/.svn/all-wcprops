@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/payouts
+END
+CreateSinglePayout.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/payouts/CreateSinglePayout.php
+END
+GetPayoutBatchStatus.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/payouts/GetPayoutBatchStatus.php
+END
+GetPayoutItemStatus.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/payouts/GetPayoutItemStatus.php
+END
+CancelPayoutItem.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/payouts/CancelPayoutItem.php
+END
+CreateBatchPayout.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/payouts/CreateBatchPayout.php
+END

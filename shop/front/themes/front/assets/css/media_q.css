@@ -1,0 +1,812 @@
+@media screen and (max-width: 1255px) {
+    .col_1 img {
+        height: 150%;
+        left: 5%;
+    }
+    .sss {
+        margin-top: -7.0%;
+    }
+    .offers_holder {
+        width: 80%;
+    }
+    .title h1 {
+        font-size: 130%;
+    }
+    .sales_force {
+        margin-top: 5%;
+    }
+    .steps_circle {
+        background-color: #d3de28;
+        height: 240px;
+        -moz-border-radius: 140px;
+        -webkit-border-radius: 120px;
+        width: 240px;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 9;
+        display: table;
+    }
+    .steps_circle p {
+        font-size: 130%;
+    }
+    .content_orange h1 {
+        letter-spacing: 13px;
+    }
+    .product_desc {
+        min-height: 230px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .ask_expert_img {
+        min-height: 500;
+    }
+    .sss {
+        margin-top: -7%;
+    }
+    .product_desc {
+        min-height: 290px;
+    }
+    .dog_offer {
+        margin-bottom: -5%;
+        padding-right: 4%;
+    }
+}
+@media screen and (max-width: 960px) {
+	     .fb-like-vet {
+    float:left !important;
+        margin-left: 0;
+    top: 0;
+    }
+    .first_row {
+        height: 19%;
+    }
+    .second_column {
+        position: relative;
+        float: left;
+        margin-top: 1%;
+    }
+    .colon_1 {
+        position: absolute;
+        right: 0;
+        width: 28.5%;
+    }
+    .dog_offer {
+        width: auto;
+    }
+    .steps_circle {
+        background-color: #d3de28;
+        height: 200px;
+        -moz-border-radius: 140px;
+        -webkit-border-radius: 100px;
+        width: 200px;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 9;
+        display: table;
+    }
+    .three_steps {
+        width: 100%;
+    }
+    .steps_circle p {
+        font-size: 90%;
+    }
+    .sss {
+        margin-top: -10.8%;
+    }
+    .dog_offer {
+        margin-bottom: -6%;
+        padding-right: 2%;
+    }
+    .circle_holder_right {
+        width: 32%!important;
+    }
+    .title h1 {
+        font-size: 120%;
+        margin-top: 4%;
+    }
+    .col_1 img {
+        height: 140%;
+    }
+    .col_1 img {
+        left: 5%;
+    }
+}
+@media screen and (max-width: 935px) {
+    .desc_p {
+        width: 90%;
+    }
+    .responsive_menu ul {
+        display: inline-block;
+        width: 100%;
+    }
+	.responsive_menu ul li ul{
+        display: none;
+        width: 100%;
+    }
+    .menu_fixed {
+        display: none!important;
+    }
+    .open_responsive {
+        z-index: 999;
+        display: inline-block;
+    }
+    .circle_holder_right {
+        z-index: 0;
+    }
+    .menu {
+        display: none;
+    }
+    .page_menu {
+        display: none;
+    }
+    .break_line {
+        display: none;
+    }
+    .content_desc p,
+    span,
+    .content_desc ul {
+        font-size: 20px!important;
+        margin-bottom: 0;
+        font-weight: normal;
+    }
+    .content_orange .title h1 {
+        font-size: 34px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .col_1 img {
+        height: 120%;
+        left: 0;
+    }
+    .colon_1 {
+        width: 33.5%;
+        height: 150%;
+    }
+    .joint_desc_cat p {
+        margin-left: 16%;
+    }
+    .col_3 {
+        width: 10%;
+    }
+    .col_2 .title h1 {
+        margin-top: -4.2%%;
+        font-size: 100%;
+    }
+    .offers_holder {
+        width: 95%;
+    }
+    hr {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .sss {
+        margin-top: -4.4%;
+        ;
+    }
+    .circle_holder_right {
+        width: 31%!important;
+    }
+    .number_holder span {
+        font-size: 280%!important;
+    }
+}
+@media screen and (max-width: 900px) {
+    .main_p_holder {
+        margin-right: 0;
+    }
+    .circle_holder_right {
+        width: 27%!important;
+    }
+    .big_title h1 {
+        font-size: 80px;
+    }
+}
+@media screen and (max-width: 830px) {
+    .header_img span {
+        letter-spacing: 0;
+        font-size: 150%;
+    }
+    .main_p_holder {
+        margin-right: 0;
+        margin-left: 0.5%;
+    }
+    .big_title h1 {
+        font-size: 37px;
+    }
+    .sales_force {
+        width: 15%;
+    }
+    .col_2 .title h1 {
+        margin-top: -5%%;
+        font-size: 100%;
+    }
+    .third_row img {
+        bottom: 12%;
+    }
+    .ask_expert_img {
+        height: 43%;
+    }
+}
+@media screen and (max-width: 783px) {
+    .main_p_holder {
+        margin: 0 auto;
+        float: none;
+        display: table;
+    }
+    .pppp {
+        margin: 0 auto;
+        float: none;
+        display: table;
+    }
+    .dog_offer {
+        width: 36%;
+    }
+    .how_much_nutrion {
+        width: 80%!important;
+    }
+}
+@media screen and (max-width: 740px) {
+    .second_row textarea {
+        height: 100px;
+    }
+    .first_row {
+        height: 24%;
+    }
+    .responsive_holder {
+        width: 100%;
+        height: 100px;
+        position: relative;
+        display: table;
+    }
+    .offer_p {
+        position: relative;
+        bottom: 0;
+        margin-bottom: 1%;
+        float: left;
+        margin-top: 10%;
+        font-size: 24px;
+        text-align: center;
+    }
+    .offer_p .offer_desc {
+        padding: 6%;
+    }
+    .offer_p .percent {
+        color: #e8a21d;
+        font-size: 40px;
+    }
+    .offer {
+        display: none;
+    }
+    .ask_expert_btn {
+        width: 50%;
+    }
+    main_p_holder {
+        margin: 0 auto;
+        float: none;
+        display: table;
+    }
+    .third_row img {
+        bottom: 14%;
+    }
+    .content_orange h1 {
+        letter-spacing: 15px;
+    }
+    .sales_force {
+        width: 20%;
+    }
+    .page_menu {
+        width: 100%;
+    }
+    .page_nutrition {
+        width: 80%!important;
+    }
+    .three_steps {
+        width: 100%!important;
+    }
+    .steps_circle {
+        background-color: #d3de28;
+        height: 170px;
+        -moz-border-radius: 140px;
+        -webkit-border-radius: 100px;
+        width: 170px;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 9;
+        display: table;
+    }
+    .steps_circle p {
+        font-size: 16px!important;
+    }
+    .circle_holder_right {
+        width: 24%!important;
+        height: 90%;
+        right: -4%!important;
+    }
+    .circle_holder_right img {
+        width: 130%;
+    }
+    .responsive_menu ul {
+        display: inline-block;
+        width: 100%;
+    }
+    .open_responsive {
+        display: inline-block;
+    }
+    .menu {
+        display: none;
+    }
+    .content_desc p,
+    span,
+    .content_desc ul {
+        font-size: 12px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .content_orange .title h1 {
+        font-size: 28px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .title_image {
+        width: 60%;
+        right: 4%;
+    }
+    .content_orange .content_desc {
+        width: 60%;
+        margin-left: 5%;
+    }
+    .col_2 p,
+    .col_1 p {
+        font-size: 15px
+    }
+    .col_1 img {
+        float: left;
+        z-index: 999;
+        position: absolute;
+    }
+    .col_2 .title h1 {
+        margin-top: -5.2%;
+    }
+    .dog_offer {
+        width: 64%;
+    }
+    .col_3 p {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 610px) {
+	     .fb-like-vet {
+    float:left !important;
+        margin-left: 0;
+    top: 0;
+    }
+    .content_desc {
+        width: 80%;
+        font-size: 28px;
+    }
+    .dog_offer {
+        width: 44%;
+    }
+    .col_2 .title h1 {
+        margin-top: -8.2%;
+        margin-left: 10%;
+    }
+    .big_title {
+        font-size: 160%;
+    }
+    .ask_an_expert p {
+        font-size: 100%;
+    }
+    .sales_force {
+        margin-top: 7%;
+        width: 22%;
+    }
+    .steps_circle {
+        background-color: #d3de28;
+        height: 130px!important;
+        -moz-border-radius: 100px!important;
+        -webkit-border-radius: 100px!important;
+        width: 130px!important;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 9;
+    }
+    .steps_circle span {
+        font-size: 100%;
+    }
+    .number_holder span {
+        font-size: 170%!important;
+    }
+    .number_holder {
+        margin-top: 12%!important;
+    }
+    .steps_circle p {
+        font-size: 13px!important;
+        margin-top: 15%;
+    }
+    .dog_offer img {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 560px) {
+	     .fb-like-vet {
+    float:left !important;
+        margin-left: 0;
+    top: 0;
+    }
+    .circle_holder {
+        width: 300px;
+        height: 300px;
+    }
+    .col_3 {
+        width: 13%;
+    }
+    .healt_insurance {
+        margin-top: 10%;
+    }
+    .healt_insurance p {
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .big_title h1 {
+        letter-spacing: 10px;
+    }
+    .joint_desc_cat p {
+        margin-left: 1%!important;
+    }
+    .col_2 .title h1 {
+        margin-top: -5.2%!important;
+    }
+    .big_title h1 {
+        font-size: 24px!important;
+    }
+    .circle_holder_right {
+        width: 23%!important;
+        height: 80%;
+        right: -6%!important;
+    }
+    .logo {
+        background-size: auto 100%;
+    }
+    .col_2 .title h1 {
+        margin-top: -8.2%%;
+    }
+    .offers_holder {
+        width: 100%;
+    }
+    hr {
+        margin: 0;
+        padding: 0;
+    }
+    .offer .offer_desc {
+        text-align: center;
+        font-size: 14px;
+    }
+    .dog_offer {
+        margin-bottom: -9%;
+        width: 90%;
+    }
+    .dog_offer img {
+        width: 93%;
+    }
+    .big_title h1 {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .big_title {
+        font-size: 160%;
+    }
+    .ask_an_expert p {
+        font-size: 140%;
+    }
+    .ask_an_expert {
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width: 667px) {
+	     .fb-like-vet {
+    float:left !important;
+        margin-left: 0;
+    top: 0;
+    }
+    
+    .main_p_holder {
+        min-width: 300px;
+        margin: auto;
+    }
+    .offer .percent {
+        font-size: 230%;
+        clear: both;
+        float: none;
+    }
+    .col_2 .title h1 {
+        margin-top: -4.2%;
+        margin-left: 20%;
+        font-size: 70%;
+    }
+    .desc_p {
+        width: 90%;
+    }
+    .colon_1 {
+        width: 39%;
+    }
+    .joint_desc_cat p {
+        margin-left: 11%;
+    }
+    .main_p_holder {
+        margin: 0 auto;
+        float: none;
+        display: table;
+    }
+    .products_container {
+        margin-top: 19%;
+    }
+    .title_p h1 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-size: 55%;
+    }
+    .product_desc {
+        padding-bottom: 5%;
+        padding-left: 9%;
+        padding-right: 11%;
+    }
+    .green_p {
+        margin-left: 0;
+    }
+    .sub_header {
+        font-size: 23px;
+    }
+    .healt_insurance p {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .responsive_holder {
+        width: 100%;
+        height: 100px;
+        position: relative;
+        display: table;
+    }
+    .offer_p {
+        position: relative;
+        bottom: 0;
+        margin-bottom: 1%;
+        float: left;
+        margin-top: 10%;
+        font-size: 24px;
+        text-align: center;
+    }
+    .offer_p .offer_desc {
+        padding: 6%;
+    }
+    .offer_p .percent {
+        color: #e8a21d;
+        font-size: 40px;
+    }
+    .offer {
+        display: none;
+    }
+}
+@media screen and (max-width: 638px) {
+    .big_title h1 {
+        font-size: 27px;
+    }
+    .title_p {
+        font-size: 45px;
+    }
+         .fb-like-vet {
+    float:left !important;
+        margin-left: 0;
+    top: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .title_p {
+        font-size: 35px;
+    }
+    .products_container {
+        margin-top: 20%;
+    }
+    .content_orange h1 {
+        letter-spacing: 9px;
+    }
+    .col_2 p,
+    .col_1 p {
+        font-size: 14px;
+    }
+    .col_3 p {
+        font-size: 26px;
+    }
+    .big_title h1 {
+        font-size: 30px!important;
+    }
+    .page_nutrition h1 {
+        font-size: 25px;
+    }
+    .circle_holder_right {
+        width: 16%!important;
+        height: 70%;
+        right: 0%!important;
+    }
+    .ask_expert_btn {
+        margin-top: -2%;
+    }
+    .sss {
+        text-align: right;
+    }
+    .offer .percent {
+        font-size: 200%;
+    }
+    .col_1 img {
+        height: 90%;
+        left: 0;
+    }
+    .col_2 .title h1 {
+        margin-top: -7.9%!important;
+    }
+    .logo {
+        background-size: auto 100%;
+    }
+    .joint_desc_cat .cat {
+        margin-left: -80%;
+    }
+    .colon_1 {
+        width: 32%!important;
+    }
+         .fb-like-vet {
+    float:left !important;
+        margin-left: 0;
+    top: 0;
+    }
+}
+@media screen and (max-width: 468px) {
+    .col_2 p {
+        width: 50%;
+    }
+    .colon_1 {
+        width: 29%!important;
+    }
+    .joint_desc_cat p {
+        width: 55%;
+    }
+    .content_desc p,
+    span,
+    .content_desc ul {
+        font-size: 15px;
+        margin-bottom: 0;
+        font-weight: normal;
+    }
+    .open_responsive span {
+        font-size: 30px!important;
+    }
+     .fb-like-vet {
+    float:left !important;
+        margin-left: 0;
+    top: 0;
+    }
+}
+@media screen and (max-width: 430px) {
+    .ask_expert_img {
+        height: 20%;
+        min-height: 200px;
+    }
+    .logo_page {
+        top: 10%;
+        max-height: 120px;
+    }
+    .offer_desc {
+        right: 2%;
+    }
+    .sales_force {
+        margin-top: 13%;
+        width: 22%;
+    }
+    .ask_an_expert p {
+        font-size: 90%;
+    }
+    .text_expert {
+        margin-left: 3%;
+        padding-bottom: 12%;
+    }
+    .big_title h1 {
+        font-size: 24px!important;
+    }
+    .steps_circle p {
+        margin-top: 0;
+    }
+    .third_row img {
+        bottom: 14%;
+    }
+    .steps_circle {
+        background-color: #d3de28;
+        height: 110px!important;
+        -moz-border-radius: 75px!important;
+        -webkit-border-radius: 75px!important;
+        width: 110px!important;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 9;
+    }
+    .img_text img {
+        width: 100%;
+    }
+    .offer .percent {
+        font-size: 100%;
+        margin-right: 0%;
+        padding-left: 3%;
+    }
+    .col_2 p,
+    .col_1 p {
+        font-size: 13px;
+    }
+    .respon_class {
+        width: 100%;
+    }
+    .col_3 p {
+        font-size: 20px;
+    }
+    .shop {
+        min-height: 160px;
+    }
+    .shop_text {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        float: left;
+        display: table;
+        font-size: 200%;
+        margin-top: 8%;
+        margin-bottom: 4%;
+        bottom: 0;
+    }
+    .title_p {
+        font-size: 30px
+    }
+     .fb-like-vet {
+    float:left !important;
+        margin-left: 0;
+    top: 0;
+    }
+}
+@media screen and (max-width: 350px) {
+    .title_p {
+        font-size: 20px;
+    }
+    .logo {
+        background-size: 70% 100%;
+        max-height: 120px;
+    }
+    .logo_f {
+        background-size: 70%;
+        max-height: 105px;
+    }
+    .logo_page {
+        background-size: 70%;
+    }
+    .title_p {
+        font-size: 25px;
+    }
+    .healt_insurance p {
+        width: 90%;
+        padding-bottom: 7%;
+        padding-top: 7%;
+    }
+     .fb-like-vet {
+   		 float:left !important;
+   		     margin-left: 0;
+    top: 0;
+    }
+}

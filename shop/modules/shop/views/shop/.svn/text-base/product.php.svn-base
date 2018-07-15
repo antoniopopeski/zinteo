@@ -1,0 +1,36 @@
+<main>
+        <div class="title">
+            <h2>Product Description</h2>
+        </div>
+<form class="form-horizontal">
+
+
+  <div class="form-group">
+<div class="content-order">
+<div style="background-color:#fff;" class="title-price">
+    <div style="color:#644e30;" class="subtitle"><?php echo $product->getName()?></div>
+    <div style="color:#ee8d2f; font-weight:400;" class="price">€ <?php echo $product->geteurprice()?></div>
+</div>
+<div class="image" >
+<img src="<?php echo base_url() . $product->getImage()?>" width="210" height="230"/>
+<a  class="btn btn-orange" href="<?php echo base_url()?>/shop/shop/checkout/<?php echo $product->getId()?>">buy THIS PRODUCT</a>
+
+</div>
+<div class="right-content-description">
+
+<?php echo $product->getDescription()?>
+
+ 
+</div>
+
+
+  </div>
+</form>
+
+
+  </div>
+</div>
+
+
+</main>
+    

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/invoice
+END
+GetInvoice.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/invoice/GetInvoice.php
+END
+RemindInvoice.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/invoice/RemindInvoice.php
+END
+RecordRefund.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/invoice/RecordRefund.php
+END
+RetrieveQRCode.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/invoice/RetrieveQRCode.php
+END
+SearchInvoices.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/invoice/SearchInvoices.php
+END
+ListInvoice.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/invoice/ListInvoice.php
+END
+CreateInvoice.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/invoice/CreateInvoice.php
+END
+DeleteInvoice.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/invoice/DeleteInvoice.php
+END
+CancelInvoice.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/invoice/CancelInvoice.php
+END
+UpdateInvoice.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/invoice/UpdateInvoice.php
+END
+SendInvoice.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/invoice/SendInvoice.php
+END
+RecordPayment.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/invoice/RecordPayment.php
+END

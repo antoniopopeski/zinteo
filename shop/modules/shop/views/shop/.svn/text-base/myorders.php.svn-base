@@ -1,0 +1,36 @@
+
+<main>
+
+<div class="title">
+	<h2>My Account / List of my purchases</h2>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 item-titles">
+	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">Product Name</div>
+	<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">Price</div>
+	<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">Quantity</div>
+	<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">Total</div>
+	<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">Date Ordered</div>
+	<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">Delivered</div>
+</div>
+<div class="items">
+        <?php foreach ($orders as $order) {?>
+ <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 item">
+		<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+			<img
+				src="<?php echo base_url() . Product::find(array('id'=>$order->productid))->getImage()?>"
+				height="50" width="50" />
+		</div>
+		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"><?php echo Product::find(array('id'=>$order->productid))->getName()?></div>
+		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"><?php echo  Product::find(array('id'=>$order->productid))->getEurPrice()?> Eur</div>
+		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"><?php echo $order->quantity ?> pieces</div>
+		<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"><?php echo $order->quantity * Product::find(array('id'=>$order->productid))->getEurPrice()?> Eur</div>
+		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"><?php echo $order->date?></div>
+		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">23 May 2015</div>
+	</div>
+	<?php }?>
+
+
+        </div>
+
+<a class="btn btn-orange" href="<?php echo base_url()?>">buy another
+	product</a> </main>

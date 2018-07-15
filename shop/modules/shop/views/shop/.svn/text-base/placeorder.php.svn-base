@@ -1,0 +1,171 @@
+
+<main>
+<div class="title">
+	<h2>Place Order</h2>
+</div>
+<form class="form-horizontal" method="post">
+
+
+	<div class="form-group">
+		<div class="content-order">
+			<div class="title-price">
+				<div class="subtitle"><?php echo $product->getName()?></div>
+				<?php if ($_SESSION['currency'] == 'eur') {?>
+				<div class="price">&euro; <?php echo $product->getEURPrice()?></div>
+				<?php } elseif ($_SESSION['currency'] == 'gbp') {?>
+				<div class="price">&pound; <?php echo $product->getGBPPrice()?></div>
+				<?php } elseif($_SESSION['currency'] == 'pln') {?>
+				<div class="price">PLN <?php echo $product->getPLNPrice()?></div>
+				<?php }?>
+				
+				<?php if ($_SESSION['currency'] == 'eur') {?>
+				
+							<input type="hidden" name="price" id="price"
+					value="<?php echo $product->getEURPrice()?>" /> <input
+					type="hidden" name="total_price" id="total_price"
+					value="<?php echo $product->getEURPrice()?>" />
+					
+					<input type="hidden" id="currency" name="currency" value="&euro;" />								
+				<?php } elseif ($_SESSION['currency'] == 'gbp') {?>
+				
+								<input type="hidden" name="price" id="price"
+					value="<?php echo $product->getGBPPrice()?>" /> <input
+					type="hidden" name="total_price" id="total_price"
+					value="<?php echo $product->getGBPPrice()?>" />
+					
+					<input type="hidden" id="currency" name="currency" value="&pound;" />		
+				
+				<?php } elseif($_SESSION['currency'] == 'pln') {?>
+				
+								<input type="hidden" name="price" id="price"
+					value="<?php echo $product->getPLNrice()?>" /> <input
+					type="hidden" name="total_price" id="total_price"
+					value="<?php echo $product->getPLNrice()?>" />
+				
+				<input type="hidden" id="currency" name="currency" value="PLN" />		
+				<?php }?>
+				
+	
+			</div>
+			<div class="image">
+				<img src="<?php echo base_url()?><?php echo $product->getImage()?>"
+					height="230" width="230" /> <a href=""><?php echo lang("Read description about the
+					product")?></a>
+			</div>
+			<div class="right-content">
+				<span><?php echo lang("Quantity")?></span> <select class="form-control" id="quantity"
+					name="quantity"
+					style="width: auto; display: inline-block; border-radius: 0px;">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<div style="display: block; border-bottom: 1px solid #54390e;">
+					<span class="span"><?php echo lang("Total Price")?></span> 
+					
+					
+					<?php if ($_SESSION['currency'] == 'eur') {?>
+				
+					<span class="span" style="color: #ee9200;" id="total_price_val">&euro; <?php echo $product->getEurPrice()?></span>
+								
+				<?php } elseif ($_SESSION['currency'] == 'gbp') {?>
+				
+					<span class="span" style="color: #ee9200;" id="total_price_val">&pound; <?php echo $product->getGBPPrice()?></span>
+				
+				<?php } elseif($_SESSION['currency'] == 'pln') {?>
+				
+					<span class="span" style="color: #ee9200;" id="total_price_val">PLN <?php echo $product->getPLNPrice()?></span>
+				
+				<?php }?>
+				
+					
+					
+				</div>
+				<div class="address-d">
+
+					<div class="delivery-address">
+						<h5>Delivery Address</h5>
+						<p><?php echo $deliveryaddress->getFirstName()?> <?php echo $deliveryaddress->getLastName()?></p>
+
+						<p><?php echo $deliveryaddress->getStreet()?> <?php echo $deliveryaddress->getstreetno()?>, </p>
+
+						<p><?php echo $deliveryaddress->getCity()?>, <?php echo $deliveryaddress->getZip()?>, <?php echo $deliveryaddress->getCountry()?></p>
+					</div>
+
+					<div class="invoice-address">
+						<h5>Invoice Address</h5>
+						<p><?php echo $invoiceaddress->getFirstName()?> <?php echo $invoiceaddress->getLastName()?></p>
+
+						<p><?php echo $invoiceaddress->getStreet()?> <?php echo $invoiceaddress->getstreetno()?>, </p>
+
+						<p><?php echo $invoiceaddress->getCity()?>, <?php echo $invoiceaddress->getZip()?>, <?php echo $invoiceaddress->getCountry()?></p>
+					</div>
+					</div>
+					<div class="address-d">
+					 <h5>Delivery Type</h5>
+					 <label><?php echo lang("Every")?></label>
+					    <select name="deliveryinterval[]" style="width:auto; display:inline-block;  border-radius: 0px;" class="form-control">
+					  	<option>Once a month</option>
+					  	<?php for($i=1;$i<13;$i++){?>
+					  		<option value="<?php echo $i?>"><?php echo $i?></option>
+					  	<?php }?>
+					   </select>
+					   <select name="deliveryinterval[]" style="width:auto; display:inline-block;  border-radius: 0px;" class="form-control">
+					   	<option value="month"><?php echo lang("month")?></option>
+					   	<option value="weeks"><?php echo lang("weeks")?></option>
+					   </select>
+					    </div>
+
+<div style="margin-top:20px!important;" class="form-group fg">
+ <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 checkbox">
+    <label class="col-xs-12 col-sm-12vcol-md-12 col-lg-12">
+      <input type="radio">Agree to the “AGB”
+    </label>
+ </div>
+</div>
+				<div class="form-group fg">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 checkbox">
+						<label class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <input
+							type="radio">Agree to “Widerrufsbelehrung”
+						</label>
+					</div>
+				</div>
+				<div class="form-group fg">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 checkbox">
+						<label class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <input
+							type="radio"> Sign up for Newsletter
+						</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="" class="col-sm-3 control-label"></label>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<button class="btn-orange" type="submit">Place Order</button>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+</form>
+</main>
+
+<script>
+$("#quantity").change(function(){
+	var quantity = $(this).val();
+
+	var price = $("#price").val();
+
+	var currency = $("#currency").val();
+	
+	var total_price = parseFloat(quantity) * parseFloat(price);
+	
+	$("#total_price").val(parseFloat(total_price).toFixed(2));
+
+	$("#total_price_val").html(currency + " " +parseFloat(total_price).toFixed(2));
+})
+</script>

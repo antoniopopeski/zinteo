@@ -1,0 +1,89 @@
+<?php
+class User extends AppCore {
+	public function __construct() {
+		parent::__construct ();
+	}
+	protected $id;
+	protected $firstname;
+	protected $lastname;
+	protected $email;
+	protected $password;
+	protected $cityid;
+	protected $address;
+	protected $zip;
+	protected $vetid;
+	protected $shippingaddress;
+	protected $paymentmethodid;
+	protected $created;
+	protected $paymenttypeid;
+	protected $country;
+	protected $city;
+	protected $forgotpassword;
+	
+	
+	public static function getByEmail($email) {
+		
+		DBApp::conn ()->where ( 'email', $email );
+		DBApp::conn ()->from ( strtolower ( get_called_class () ) );
+		
+		$result = DBApp::conn ()->get ()->as_class(get_called_class());
+		
+		return current($result);
+	}
+	
+	public static function getByPasswordHash($hash) {
+	
+		DBApp::conn ()->where ( 'forgotpassword', $hash );
+		DBApp::conn ()->from ( strtolower ( get_called_class () ) );
+	
+		$result = DBApp::conn ()->get ()->as_class(get_called_class());
+	
+		return current($result);
+	}
+  	
+	public static function login($data = array()) {
+		if (isset ( $data ['email'] ) and isset ( $data ['password'] )) {
+			
+			DBApp::conn ()->where ( 'email', $data ['email'] )->where ( 'password', md5 ( $data ['password'] ) );
+			DBApp::conn ()->from ( strtolower ( get_called_class () ) );
+			$result = DBApp::conn ()->get ()->result ();
+			
+			if ($result) {
+				return $result;
+			} else {
+				return false;
+			}
+		} else {
+			return new self ();
+		}
+	}
+	public static function getCurrent() {
+		$user = $_SESSION ['user'];
+		return self::find ( array (
+				"id" => $user->id 
+		) );
+	}
+	public static function logout() {
+		sess_destroy ();
+	}
+	public static function setCurrent($id) {
+		if ($id and is_numeric ( $id )) {
+			
+			$user = self::find ( array (
+					"id" => $id 
+			) );
+			
+			$sessdata = array (
+					"user" => array (
+							"id" => $id,
+							"username" => $user->getUsername (),
+							"email" => $user->getEmail (),
+							"firstname" => $user->getFirstname (),
+							"lastname" => $user->getLastname () 
+					) 
+			);
+			
+			sess_set ( $sessdata );
+		}
+	}
+}

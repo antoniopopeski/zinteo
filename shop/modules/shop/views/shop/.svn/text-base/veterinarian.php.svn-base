@@ -1,0 +1,67 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>	
+<script>
+
+</script>
+<main>
+<div class="title">
+	<h2>Veterenian</h2>
+	<a href="#">Skip this</a>
+</div>
+<form class="form-horizontal" method="post">
+	<div class="form-group">
+		<label for="" class="col-sm-3 control-label">Who is your veterinarian?</label>
+		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+			<select name="veterianid" id="veterianid" class="form-control">
+                       <?php foreach ($vets as  $v) {?>
+                       	<option value="<?php echo $v->getId()?>"><?php echo $v->getName()?> <?php echo $v->getLastName()?>, <?php echo $v->getCity()?></option>
+                       <?php }?>
+                       </select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputPassword3" class="col-sm-3 control-label"><?php echo lang("City")?>?</label>
+		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+			<input type="text" class="form-control" id="city" name="city"
+				placeholder="">
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<label for="inputPassword3" class="col-sm-6 control-label"><?php echo lang("You cant find your veterinarian?")?>
+		<br/><?php echo lang("Click")?><a href="#" id="add-new-vet"><?php echo lang("here")?></a><?php echo lang("to add new")?></label>
+		
+	</div>
+	
+		
+	<div id="new-vet-insert" style="display:none">
+	<hr/>
+	
+	<div class="form-group">
+		<label for="inputPassword3" class="col-sm-3 control-label"><?php echo lang("Name")?>?</label>
+		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+			<input type="text" class="form-control" name="vetname" id="vetname"
+				placeholder="">
+		</div>
+	</div>
+	
+	
+		<div class="form-group">
+		<label for="inputPassword3" class="col-sm-3 control-label"><?php echo lang("City")?>?</label>
+		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+			<input type="text" class="form-control" name="vetcity" id="vetcity"
+				placeholder="">
+		</div>
+	</div>
+	
+	</div>
+	<div class="form-group">
+		<label for="" class="col-sm-3 control-label"></label>
+		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+			<button class="btn-orange" type="submit">Continue</button>
+		</div>
+
+	</div>
+
+</form>
+</main>
+

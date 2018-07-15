@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/vetshopsvn/!svn/ver/1291/modules/user/views/user
+END
+login.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/vetshopsvn/!svn/ver/1439/modules/user/views/user/login.php
+END
+resetpassword.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/vetshopsvn/!svn/ver/1436/modules/user/views/user/resetpassword.php
+END
+forgotpassword.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/vetshopsvn/!svn/ver/1426/modules/user/views/user/forgotpassword.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/vetshopsvn/!svn/ver/1241/modules/user/views/user/index.php
+END
+register.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/vetshopsvn/!svn/ver/1290/modules/user/views/user/register.php
+END

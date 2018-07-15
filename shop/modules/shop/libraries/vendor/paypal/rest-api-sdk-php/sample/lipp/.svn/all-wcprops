@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/lipp
+END
+GenerateAccessTokenFromRefreshToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/lipp/GenerateAccessTokenFromRefreshToken.php
+END
+ObtainUserConsent.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/lipp/ObtainUserConsent.php
+END
+UserConsentRedirect.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/lipp/UserConsentRedirect.php
+END
+GetUserInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/lipp/GetUserInfo.php
+END

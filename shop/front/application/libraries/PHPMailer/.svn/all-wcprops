@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer
+END
+.scrutinizer.yml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/.scrutinizer.yml
+END
+class.phpmailer.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/class.phpmailer.php
+END
+travis.phpunit.xml.dist
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/travis.phpunit.xml.dist
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/LICENSE
+END
+changelog.md
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/changelog.md
+END
+class.pop3.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/class.pop3.php
+END
+.travis.yml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/.travis.yml
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/.gitignore
+END
+class.smtp.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/class.smtp.php
+END
+composer.json
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/composer.json
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/README.md
+END
+VERSION
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/VERSION
+END
+PHPMailerAutoload.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/vetfriendsvn/!svn/ver/46/application/libraries/PHPMailer/PHPMailerAutoload.php
+END

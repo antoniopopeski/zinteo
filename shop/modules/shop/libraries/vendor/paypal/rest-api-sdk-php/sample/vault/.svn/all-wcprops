@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/vault
+END
+DeleteBankAccount.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/vault/DeleteBankAccount.php
+END
+GetBankAccount.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/vault/GetBankAccount.php
+END
+ListCreditCards.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/vault/ListCreditCards.php
+END
+GetCreditCard.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/vault/GetCreditCard.php
+END
+UpdateCreditCard.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/vault/UpdateCreditCard.php
+END
+DeleteCreditCard.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/vault/DeleteCreditCard.php
+END
+CreateCreditCard.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/vault/CreateCreditCard.php
+END
+CreateBankAccount.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/vault/CreateBankAccount.php
+END

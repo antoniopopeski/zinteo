@@ -1,0 +1,61 @@
+
+<?php
+
+class Users extends Admin_Controller {
+	
+	public function __construct() {
+		parent::__construct();
+		
+		loader::lib ( "PaymentType" );
+		loader::lib ( "Product" );
+		loader::lib ( "Order" );
+		loader::lib ( '../user/User' );
+		loader::lib ( '../shop/Veterinars' );
+		loader::lib ( '../shop/DeliveryAddress' );
+		
+	}
+	
+	public function index() {
+		
+		$data = array();
+		$data['users'] = User::find(array('orderby'=>'desc'));
+		
+		$data['main'] = "users/index";
+		$data['page_title'] = lang("Users");
+		return view ( "../theme/admin", $data, false );
+	}
+	
+	
+	public function insert() {
+		
+		$data = array();
+				
+		$data['main'] = "users/insert";
+		$data['page_title'] = lang("Users");
+		
+		$form = lib ( 'ob/validator' );
+		
+		if (i_post()) {
+			
+			$form->set_rules ( 'email', lang ( "Email" ), 'required|xss_clean|min_len[2]|max_len[500]' );
+			$form->set_rules ( 'password', lang ( "Password" ), 'required|xss_clean|min_len[3]' );
+			
+			// check for validation
+			if ($form->run () === FALSE) {
+				// validation fail!
+				// reload same page with validation errors displayed
+				return view ( "../theme/admin", $data, false );
+			}
+			
+			$user = new User();
+			$user->setEmail(i_post('email'));
+			$user->setPassword(md5(i_post('password')));
+			
+			$user->insert();
+			
+			redirect("/admin/users/index");
+		}
+		
+		return view ( "../theme/admin", $data, false );
+	}
+}

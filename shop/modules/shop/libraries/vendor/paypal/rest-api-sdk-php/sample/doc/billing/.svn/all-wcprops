@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/billing
+END
+UpdateBillingAgreement.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/billing/UpdateBillingAgreement.html
+END
+SearchBillingTransactions.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/billing/SearchBillingTransactions.html
+END
+GetBillingAgreement.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/billing/GetBillingAgreement.html
+END
+ExecuteAgreement.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/billing/ExecuteAgreement.html
+END
+CreatePlan.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/billing/CreatePlan.html
+END
+ReactivateBillingAgreement.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/billing/ReactivateBillingAgreement.html
+END
+DeletePlan.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/billing/DeletePlan.html
+END
+CreateBillingAgreementWithPayPal.html
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/billing/CreateBillingAgreementWithPayPal.html
+END
+UpdatePlan.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/billing/UpdatePlan.html
+END
+GetPlan.html
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/billing/GetPlan.html
+END
+UpdatePlanPaymentDefinitions.html
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/billing/UpdatePlanPaymentDefinitions.html
+END
+ListPlans.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/billing/ListPlans.html
+END
+SuspendBillingAgreement.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/billing/SuspendBillingAgreement.html
+END
+CreateBillingAgreementWithCreditCard.html
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/billing/CreateBillingAgreementWithCreditCard.html
+END

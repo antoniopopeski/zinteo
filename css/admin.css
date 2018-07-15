@@ -1,0 +1,567 @@
+@CHARSET "UTF-8";
+
+html,body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: "Calibri", "Trebuchet MS", "Lucida Sans Unicode", "Arial";
+	background-color: #DDD;
+}
+
+input,select,button,textarea {
+	font-family: "Calibri", "Trebuchet MS", "Lucida Sans Unicode", "Arial";
+	font-size: 14px;
+}
+
+hr {
+	border: 1px solid #EEE;
+	margin: 10px 0;
+}
+
+.elements label {
+	margin-right: 14px;
+	color: #666;
+}
+
+.elements input[type="radio"]:checked+label,.elements input[type="checkbox"]:checked+label
+	{
+	color: #000;
+	font-weight: bold;
+}
+
+.delete {
+	color: #000;
+	text-decoration: none;
+}
+
+dl {
+	padding: 10px;
+}
+
+#main {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: block;
+	padding: 10px;
+	background-color: #EBEBEB;
+	-webkit-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#content {
+	position: relative;
+	display: block;
+	float: left;
+	width: 85%;
+	padding-left: 10px;
+	background-color: #EBEBEB;
+	-webkit-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.footer {
+	margin-top: 1em;
+}
+
+/*stil za forme div namesto table*/
+.pole {
+	margin-bottom: 5px;
+}
+
+.labeler {
+	position: relative;
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+	font-weight: bold;
+}
+
+.elements {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#adminTabela {
+	width: 100%;
+}
+
+/*stil na dugminja i input od tip submit*/
+input[type="submit"],.submit {
+	background-color: #192637;
+	border: none;
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+	padding: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+a.logout,a.logout:HOVER,a.logout:VISITED {
+	margin-bottom: 1em;
+	color: #000;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#info {
+	position: relative;
+	width: 900px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+
+#info label {
+	padding: 0 10px;
+}
+
+input.error {
+	background-color: #FCC;
+}
+
+label.error {
+	color: #F00;
+	padding: 2px 5px;
+	position: absolute;
+	top: -20px;
+	right: 0px;
+}
+
+label.success {
+	background-color: #CFC;
+	padding: 5px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+}
+
+ul,ol {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 15%;
+}
+
+.mainNav ul,.mainNav li {
+	position: relative;
+	text-align: left;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+
+.mainNav li.selected,.mainNav li.selected a {
+	text-decoration: underline;
+	color: #009; /*
+	background-color: #DDD;
+	font-style: italic;
+	font-weight: bold;*/
+}
+
+.mainNav li:HOVER,.mainNav li.selected:HOVER,.mainNav li.selected a:HOVER
+	{
+	color: #00C; /*
+	background-color: #CDE;*/
+	font-style: normal;
+	text-decoration: underline;
+}
+
+.mainNav li a {
+	color: #000;
+	display: block;
+	text-decoration: none;
+	padding: 5px;
+}
+
+ol.matches {
+	position: relative;
+	display: block;
+	top: 5px;
+	left: 10px;
+	right: 10px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	z-index: 0;
+	width: auto;
+	clear: both;
+	list-style: none;
+}
+
+ol.matches li {
+	background-color: transparent;
+	float: left;
+	margin-right: 5px;
+	border: 1px solid #EEE;
+	border-bottom: none;
+}
+
+ol.matches li a {
+	color: #000;
+	text-decoration: none;
+	padding: 5px 5px 10px 5px;
+	display: block;
+}
+
+ol.matches li.selected {
+	background-color: #EFEFEF;
+}
+
+ol.matches li.selected {
+	background-color: #FFF;
+}
+
+ol.matches li:HOVER,ol.matches li.selected:HOVER {
+	background-color: #CFCFCF;
+}
+
+.navLink li.selected,.navLink li.selected:HOVER {
+	font-weight: bold;
+}
+
+#sorting {
+	margin-top: 50px;
+}
+
+#sorting li {
+	margin: 0 0 3px;
+	padding: 8px;
+	background-color: #192637;
+	color: #fff;
+	list-style: none;
+	cursor: move;
+}
+
+td.tabelaNaslov,td.tabelaNaslov a,td.tabelaNaslov a:VISITED,td.tabelaNaslov a:HOVER
+	{
+	font-size: 16px;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: left;
+	color: #000;
+}
+
+#adminTabela {
+	background-color: #FFF;
+}
+
+#adminTabela td {
+	margin: 0px;
+}
+
+#adminTabela tr {
+	border-bottom: 1px solid #CCC;
+	cursor: pointer;
+}
+
+#adminTabela tr.selected {
+	background-color: #EFF;
+}
+
+#adminTabela tr:last-child {
+	border: none;
+}
+
+table.dataTable tbody tr:HOVER {
+	background-color: #DFD;
+}
+
+#new {
+	background-color: #CCF;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	padding: 2px 5px;
+	margin: 10px 0;
+	border: 2px solid #99F;
+	cursor: pointer;
+}
+/*
+.pagination {
+	position: absolute;
+	z-index:2000;
+	top: 250px;
+	left:1em;
+}*/
+.pagination a {
+	color: #000;
+	display: inline-block;
+	background-color: #EEE;
+	margin: 3px;
+	padding: 4px 8px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.pagination a:hover,.pagination b {
+	background-color: #CCC;
+	padding: 2px;
+	margin: 3px;
+	padding: 4px 8px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* slajder stilovi */
+.slajder {
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+.desno {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: top;
+	opacity: 0.5;
+}
+
+.levo {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: top;
+	opacity: 0.5;
+}
+
+.desno:HOVER,.levo:HOVER {
+	opacity: 1;
+}
+
+.mesto {
+	position: relative;
+	display: inline-block;
+	padding: 0 5px;
+	vertical-align: top;
+}
+
+.prozor {
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.film {
+	position: absolute;
+	display: block;
+	overflow: visible;
+	top: 0;
+	left: 0;
+}
+
+.natpis {
+	position: relative;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.slajd {
+	position: relative;
+	float: left;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+.slajd a {
+	text-decoration: none;
+	color: #000;
+}
+
+.slajd a:HOVER {
+	background-color: #000;
+	color: #fff;
+}
+
+.matchDiv {
+	float: left;
+	position: relative;
+	vertical-align: top;
+	overflow: hidden;
+	width: 100%;
+}
+
+.pocetok {
+	color: #333;
+}
+
+.match {
+	position: relative;
+	vertical-align: top;
+	width: 100%;
+	height: 60px;
+	border: 1px #000 solid;
+	overflow: hidden;
+}
+
+.home {
+	float: left;
+	position: relative;
+	text-align: left;
+	width: 40%;
+	height: 100%;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.draw {
+	float: left;
+	position: relative;
+	text-align: center;
+	width: 20%;
+	height: 100%;
+	cursor: pointer;
+	padding: 5px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.away {
+	float: left;
+	position: relative;
+	text-align: right;
+	width: 40%;
+	height: 100%;
+	padding: 5px;
+	cursor: pointer;;
+	box-sizing: border-box;
+}
+
+.home:HOVER,.away:HOVER,.draw:HOVER {
+	background-color: #9090FF;
+}
+
+.home.tipper,.away.tipper,.draw.tipped {
+	background-color: #505050;
+	color: #ffffff;
+}
+
+.home.selected.tipper.home.selected,.away.selected,.away.selected.tipper,.draw.selected,.draw.selected.tipper
+	{
+	background-color: #3040FF;
+	color: #000000;
+}
+
+.tim {
+	position: relative;
+	display: block;
+	font-size: 16px;
+}
+
+.koeficient {
+	position: relative;
+	vertical-align: top;
+	display: block;
+}
+
+.item {
+	float: left;
+	width: 32.3%;
+	position: relative;
+	overflow: hidden;
+	margin: 0.5%;
+}
+
+.item.live {
+	color: #666;
+	border: 1px solid #333;
+}
+
+.item.win {
+	color: #090;
+	border: 1px solid #090;
+}
+
+.item.lose {
+	color: #900;
+	border: 1px solid #900;
+}
+
+.betTim,.betRez {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+}
+
+.betTip {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+}
+
+.saldo {
+	position: absolute;
+	display: block;
+	bottom: -20px;
+	width: 70%;
+	left: 15%;
+	text-align: center;
+}
+
+.custom-combobox {
+	position: relative;
+	display: block;
+    margin-right: 40px;
+}
+
+.custom-combobox-toggle {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-left: -1px;
+	padding: 0;
+	/* support: IE7 */
+	*height: 1.7em;
+	*top: 0.1em;
+}
+
+.custom-combobox-input {
+	margin: 0;
+	padding: 0.2em;
+}
+
+div {
+	-webkit-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}

@@ -1,0 +1,140 @@
+<?php
+class Productscategory extends Admin_Controller {
+	public function __construct() {
+		parent::__construct ();
+	}
+	public function index() {
+		
+		$data = array();
+		$data['main'] = "productscategory/index";
+		$data['page_title'] = lang("Brands");
+		
+		$data['categories'] = ProductCategory::find();
+		
+		return view ( "../theme/admin", $data, false );
+	}
+	
+	public function insert() {
+		$data = array();
+		$data['main'] = "productscategory/insert";
+		$data['page_title'] = lang("Brands - Insert new brand");
+		
+		$form = lib ( 'ob/validator' );
+		$data['form'] = $form;
+		
+		if (i_post()) {
+			
+			$form->set_rules ( 'name', lang ( "Name" ), 'required|xss_clean|min_len[2]|max_len[500]' );
+			$form->set_rules ( 'active', lang ( "Active" ), 'required|xss_clean' );
+			$form->set_rules ( 'description', lang ( "Description" ), 'required|xss_clean' );
+			//$form->set_rules ( 'image', lang ( "Image" ), 'required' );
+			
+			// check for validation
+			if ($form->run () === FALSE) {
+				// validation fail!
+				// reload same page with validation errors displayed
+				return view ( "../theme/admin", $data, false );
+			}
+			
+			$image_path = "";
+			if (strpos($_SERVER["HTTP_HOST"], "kriipton") !== false ) {
+				require $_SERVER['DOCUMENT_ROOT'] . "/shop/app/libraries/upload.php";
+			} else {
+				require $_SERVER['DOCUMENT_ROOT'] . "/app/libraries/upload.php";
+			}
+			$image = new Upload($_FILES['image']);
+			if ($image->uploaded) {
+				$image->Process($_SERVER["DOCUMENT_ROOT"] . "/public/");
+				$image_path = "/public/" . $image->file_src_name;
+					
+			}
+			
+			$productcategory = new ProductCategory();
+			
+			$productcategory->setName(i_post('name'))->setActive(i_post('active'))->setImage($image_path)->setDescription(i_post("description"))->setCreated(date('Y-m-d H:i:s'));
+			$productcategory->insert();
+			
+			log_me ( 'debug', '[ admin ]: New Product Category was added : ' . i_post ( 'name' )  );
+			
+			//sess_set_flash ( 'success', lang ( 'Question was succesfuly edited' ) );
+			
+			// redirect to index page with messages displayed
+			redirect ( "/admin/productscategory/index" );
+		}
+		
+		return view ( "../theme/admin", $data, false );
+		
+	}
+	
+	public function edit($id) {
+		$data = array();
+		$data['main'] = "productscategory/edit";
+		$data['page_title'] = lang("Brands - edit brand");
+		
+		$form = lib ( 'ob/validator' );
+		
+		if (i_post()) {
+				
+			$form->set_rules ( 'name', lang ( "Name" ), 'required|xss_clean|min_len[2]|max_len[500]' );
+			$form->set_rules ( 'active', lang ( "Active" ), 'required|xss_clean' );
+			// check for validation
+			if ($form->run () === FALSE) {
+				// validation fail!
+				// reload same page with validation errors displayed
+				return view ( "../theme/admin", $data, false );
+			}
+				
+			$image_path = "";
+			if (strpos($_SERVER["HTTP_HOST"], "kriipton") !== false ) {
+				require $_SERVER['DOCUMENT_ROOT'] . "/shop/app/libraries/upload.php";
+			} else {
+				require $_SERVER['DOCUMENT_ROOT'] . "/app/libraries/upload.php";
+			}
+			$image = new Upload($_FILES['image']);
+			if ($image->uploaded) {
+			
+				$image->Process($_SERVER["DOCUMENT_ROOT"] . "/public/");
+				$image_path = "/public/" . $image->file_src_name;
+					
+			}
+				
+			$productcategory = ProductCategory::find(array('id'=>$id));
+			
+			if ($image_path) {  
+				$productcategory->setImage($image_path);
+			}
+			
+			$productcategory->setName(i_post('name'))->setActive(i_post('active'))->setDescription(i_post("description"))->setModified(date('Y-m-d H:i:s'));
+			$productcategory->update();
+				
+			log_me ( 'debug', '[ admin ]: Product Category was edited : ' . i_post ( 'name' )  );
+				
+			//sess_set_flash ( 'success', lang ( 'Question was succesfuly edited' ) );
+				
+			// redirect to index page with messages displayed
+			redirect ( "/admin/productscategory/index" );
+		}
+		
+		
+		if ($id) {
+			$category = ProductCategory::find(array('id'=>$id));
+			$data['category'] = $category;
+		}
+		
+		return view ( "../theme/admin", $data, false );
+		
+	}
+	
+	public function delete($id) {
+		$data = array();
+		
+		ProductCategory::remove($id);
+		
+		// delete products that belong in this category
+		$product = Product::getByProductCategoryId($id);
+		foreach ($product as $p) {
+			$p->delete();
+		}
+		redirect ( "/admin/productscategory/index" );
+	}
+}

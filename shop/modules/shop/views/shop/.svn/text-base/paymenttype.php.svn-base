@@ -1,0 +1,30 @@
+    <main>
+        <div class="title">
+            <h2>Choose Payment Option</h2>
+        </div>
+<form class="form-horizontal" method="post">
+
+ <?php foreach ($types as $type) {?>
+  <div class="form-group fg">
+   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 checkbox">
+    	 <label class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+         <input type="radio" name="type" value="<?php echo $type->getId()?>"/><?php echo $type->getType()?>
+    </label>
+   </div>
+</div>
+                
+                  <?php }?>
+
+ <div class="form-group">
+    <label for="" class="col-sm-3 control-label"></label>
+	<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+    		<button class="btn-orange" type="submit">Continue</button>
+	</div>
+  </div>
+
+ 
+
+</form>
+</main>
+
+

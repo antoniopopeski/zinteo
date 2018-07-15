@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments
+END
+OrderCapture.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/OrderCapture.html
+END
+OrderCreateForVoid.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/OrderCreateForVoid.html
+END
+ExecutePayment.html
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/ExecutePayment.html
+END
+GetPayment.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/GetPayment.html
+END
+GetCapture.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/GetCapture.html
+END
+RefundCapture.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/RefundCapture.html
+END
+OrderCreateUsingPayPal.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/OrderCreateUsingPayPal.html
+END
+CreatePaymentUsingPayPal.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/CreatePaymentUsingPayPal.html
+END
+OrderDoVoid.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/OrderDoVoid.html
+END
+AuthorizationCapture.html
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/AuthorizationCapture.html
+END
+ListPayments.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/ListPayments.html
+END
+CreatePayment.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/CreatePayment.html
+END
+OrderGet.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/OrderGet.html
+END
+OrderCreateForCapture.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/OrderCreateForCapture.html
+END
+CreateFuturePayment.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/CreateFuturePayment.html
+END
+Reauthorization.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/Reauthorization.html
+END
+VoidAuthorization.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/VoidAuthorization.html
+END
+GetAuthorization.html
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/GetAuthorization.html
+END
+UpdatePayment.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/UpdatePayment.html
+END
+CreatePaymentUsingSavedCard.html
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/CreatePaymentUsingSavedCard.html
+END
+AuthorizePayment.html
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/AuthorizePayment.html
+END
+OrderAuthorize.html
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/OrderAuthorize.html
+END
+AuthorizePaymentUsingPayPal.html
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/AuthorizePaymentUsingPayPal.html
+END
+OrderCreateForAuthorization.html
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/vetshopsvn/!svn/ver/742/modules/shop/libraries/vendor/paypal/rest-api-sdk-php/sample/doc/payments/OrderCreateForAuthorization.html
+END

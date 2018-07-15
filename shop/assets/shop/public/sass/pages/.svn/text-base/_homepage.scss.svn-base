@@ -1,0 +1,305 @@
+.wrapper {
+    
+    main {
+        padding: 30px 40px;
+        
+        .title {
+                h2 {
+                    font-size: 25px;
+                    color: $orange;
+                    float: left;
+                }
+            
+                h4 {
+                    color: $orange;
+                    font-size: 18px;
+                    display: inline-block;
+                    width:100%;
+                    margin-top:10px;
+                }
+                h5 {
+                    color: #543912;
+                    font-size: 20px;
+                    display: inline-block;
+                    width:100%;
+                }
+            
+                a {
+                    float: right;
+                    color: $brown;
+                    font-size: 20px;
+                    line-height: 35px;
+                }
+        }
+        
+        form {
+            border:none;
+            border-bottom: 3px solid $dark-brown;
+            
+                .gform-body {
+                    border:none;
+                    margin-bottom: 35px;
+                    
+                    ul {
+                        
+                            li {
+                                width:100%;
+                                display: block;
+                                padding: 30px 0px;
+                                
+                                label {
+                                    float: left;
+                                    font-size: 20px;
+                                    color:$dark-brown;
+                                    width: 25%;
+                                    text-align: right;
+                                    line-height: 30px;
+                                }
+                                
+                                input {
+                                  width: 70%;
+                                  padding: 8px;
+                                  border: 1px solid #6d5631;
+                                  float: right;
+                                  color:$orange;
+                                }
+                                
+                                .password {
+                                    float:left;
+                                    margin-top:20px;
+                                }
+                            }
+                        .information-content {
+                            margin-top: 50px;
+                        }
+                        
+                        .checkbox {
+                                width: 70%;
+                                float: right;
+                                padding: 10px;
+
+                            .name {
+                                float:right!important;
+                            }
+                            span {
+                                margin-left: 10px;
+                                font-size: 18px;
+                            }
+                            img {
+                              margin-left: 20px;
+                              margin-top: -15px;
+                            }
+                            
+                            input[type=checkbox] {
+                                float:left;
+                                width:auto;
+                                margin-top: 3px;
+                            }
+                            
+                            button {
+                                width:100%;
+                                padding: 15px;
+                                background-color: $orange2;
+                                color: $white;
+                                border: none;
+                                outline: none;
+                                border-radius: 5px;
+                                text-transform: uppercase;
+                                font-size: 18px;
+                                text-align: left;
+                                padding-left: 25px;
+                            }
+                        }
+                        .submit {
+                              padding: 20px 0px;
+                            
+                                button {
+                                width:70%;
+                                padding: 15px 50px;
+                                float:left;
+                                }
+                                
+                                a {
+                                  width: 70%;
+                                  display: inline-block;
+                                  margin-top: 20px;
+                                  text-align: center;
+                                  color: $dark-brown;
+                                }
+                        }
+                        
+                    }
+                }
+        }
+        
+        .delivery-form {
+              margin-top: 30px;
+            
+            h2 {
+                float:none;
+                margin-bottom: 25px;
+            }
+            
+            h3 {
+                color: #543912;
+                font-size: 20px;
+            }
+            
+        }
+        
+        .summary {
+             border-bottom: none;
+        }
+        
+        .items {
+              border-bottom: 2px solid;
+              width: 100%;
+              line-height: 70px;
+              font-size: 25px;
+            
+                a {
+                    text-decoration: none;
+                    color:grey;
+                }
+        }
+        
+    }
+}
+
+@media screen and (max-width:1024px) {
+    
+.wrapper {
+    
+    main {
+        
+        form {
+                .gform-body {
+                    
+                    ul {
+                            li {
+                                
+                                label {
+                                    width:100%;
+                                    text-align: left;
+                                    margin-top: 10px;
+                                }
+                                
+                                input {
+                                  width: 100%;
+                                }
+                                
+                            }
+                            .submit {
+                                    
+                                    button {
+                                        width:100%;
+                                    }
+                                
+                                    a {
+                                        width:100%;
+                                    }
+                        }
+                                .checkbox {
+                                    width:100%;
+                                }
+                    }
+                }
+        }
+        
+    }
+}
+    
+}
+
+@media screen and (max-width:767px) {
+.wrapper {
+    width: 80%;
+    
+    main {
+          padding: 20px 20px;
+        
+        .title {
+                h2 {
+                    font-size: 18px;
+                }
+                h3, h4, h5 {
+                    font-size: 16px;
+                }
+                a {
+                    font-size: 16px;
+                }
+        }
+        
+        form {
+            
+                .gform-body {
+                    
+                    ul {
+                        
+                            li {
+                                
+                                label {
+                                    font-size: 14px;
+                                }
+                                
+                            }
+                        
+                        .checkbox {
+
+                            span {
+                                font-size: 14px;
+                            }
+                            
+                            button {
+                                font-size: 14px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+        }
+
+                .items {
+              line-height: 50px;
+              font-size: 20px;
+            }
+        
+    }
+}
+}
+
+@media screen and (max-width:480px) {
+.wrapper {
+    
+    main {
+          padding: 20px 20px;
+         
+        form {
+            
+                .gform-body {
+                    
+                    ul {
+                        
+                        .checkbox {
+                            
+                            button {
+                                font-size: 9px;
+                            }
+                            img {
+                                 margin-left: 20px;
+                                 margin-top: -10px;
+                                 width:170px;
+                            }
+                        }
+                    }
+                }
+        }
+        
+    }
+}
+}
+
+
+
+
+       
